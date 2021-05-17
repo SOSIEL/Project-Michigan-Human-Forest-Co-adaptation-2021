@@ -1,0 +1,1242 @@
+>> Name: input_BHE_SHE.txt
+>> Description: Biomass Harvest extension's (BHE's) input file, modified for compatibility
+>>>> with the SOSIEL Harvest extension (SHE).
+>> First author: Matthew Duveneck.
+>> Second author: Garry Sotnik. Removed prescriptions unrelated to management area 2 and
+>>>> changed prescription names for compatibiltiy with SHE.
+
+   LandisData "Biomass Harvest"
+
+   Timestep 5
+
+   ManagementAreas	man_area_split_pnif5.img
+
+   Stands		stand_8_13_alg1.img
+
+Prescription	MM1-1_DO1 << Aspen_Clearcut_no_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   poputrem	100	35
+		   popugran	100	35
+		   popubals	100	35
+		MinimumAge	35
+		ForestTypeTable << aspen
+		>> InclusionRule ageRange percentCells species
+		   Optional 35-90 45 poputrem
+		   Optional 35-90 45 popugran
+		   Optional 35-100 45 popubals
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+
+Prescription	MM2-1_DO1 << Aspen_Clearcut_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   poputrem	100	35
+		   popugran	100	35
+		   popubals	100	35
+		MinimumAge	35
+		ForestTypeTable << aspen
+		>> InclusionRule ageRange percentCells species
+		   Optional 35-90 45 poputrem
+		   Optional 35-90 45 popugran
+		   Optional 35-100 45 popubals
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+		Plant pinuresi pinubank
+
+Prescription	MM3-1_DO1 << Paperbirch_Clearcut
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   betupapy	100	35
+		MinimumAge	35
+		ForestTypeTable << aspen
+		>> InclusionRule ageRange percentCells species
+		   Required 35-100 highest betupapy
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+				
+Prescription	MM4-1_DO1 << Paperbirch_Seedtree
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   betupapy	100	35
+		MinimumAge	35
+		ForestTypeTable << aspen
+		>> InclusionRule ageRange percentCells species
+		   Required 35-100 highest betupapy
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	30-300(80%)
+		   betupapy	30-110(80%)
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+	
+Prescription	MM5-1_DO1 << Paperbirch_Shelterwood
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   betupapy	100	35
+		MinimumAge	35
+		ForestTypeTable << aspen
+		>> InclusionRule ageRange percentCells species
+		   Required 35-100 highest betupapy
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	50-250(70%)
+		   betualle 	150-300(70%)
+		   betupapy	35-110(70%) 
+		   carycord	200-300(70%)
+		   fagugran	200-350(70%)
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	100-200(70%)
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	150-250 (70%)
+		   ulmuamer	All
+		   tsugcana	800
+	           >> tsugcana	All
+		SingleRepeat 10
+		CohortsRemoved	SpeciesList
+		   acersacc	30-250
+		   betualle 	30-300
+		   betupapy	30-110
+		   carycord	30-300
+		   fagugran	30-350
+		   prunsero	30-200
+		   tiliamer 	30-250
+		   tsugcana	800
+
+Prescription	MM6-1_DO1 << Swamp_Hardwoods_Clear
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acerrubr 	100		55
+		   betupapy	100		55
+		   betualle	100		55
+		   fraxpenn	100		55
+		   fraxnigr	100		55
+		   prunsero	100		55
+		   ulmuamer	100		55
+		MinimumAge	55
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-150 45 acerrubr
+		   Optional 55-110 45 betupapy
+		   Optional 55-300 45 betualle
+		   Optional 55-150 45 fraxpenn
+		   Optional 55-150 45 fraxnigr
+		   Optional 55-200 45 prunsero
+		   Optional 55-85 45 ulmuamer
+		SiteSelection Complete
+		CohortsRemoved	ClearCut
+
+Prescription	MM7-1_DO1 << Swamp_Hardwoods_Seedtree
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acerrubr 	100		55
+		   betupapy	100		55
+		   betualle	100		55
+		   fraxpenn	100		55
+		   fraxnigr	100		55
+		   prunsero	100		55
+		   ulmuamer	100		55
+		MinimumAge	55
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-150 45 acerrubr
+		   Optional 55-110 45 betupapy
+		   Optional 55-300 45 betualle
+		   Optional 55-150 45 fraxpenn
+		   Optional 55-150 45 fraxnigr
+		   Optional 55-200 45 prunsero
+		   Optional 55-85 45 ulmuamer
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	30-150(80%)
+		   acersacc	All
+		   betualle 	100-300(80%)
+		   betupapy	80-110(80%) 
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	30-150(80%)
+		   fraxpenn	30-150(80%)
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	30-200(80%)
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	30-85(80%)
+		   tsugcana	800
+
+Prescription	MM8-1_DO1 << Swamp_Hardwoods_Shelterwood
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acerrubr 	100		55
+		   betupapy	100		55
+		   betualle	100		55
+		   fraxpenn	100		55
+		   fraxnigr	100		55
+		   prunsero	100		55
+		   ulmuamer	100		55
+		MinimumAge	55
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-150 45 acerrubr
+		   Optional 55-110 45 betupapy
+		   Optional 55-300 45 betualle
+		   Optional 55-150 45 fraxpenn
+		   Optional 55-150 45 fraxnigr
+		   Optional 55-200 45 prunsero
+		   Optional 55-85 45 ulmuamer
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	100-150(60%)
+		   acersacc	All
+		   betualle 	100-300(60%)
+		   betupapy	80-110(60%) 
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	100-150(60%)
+		   fraxpenn	100-150(60%)
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	150-200(60%)
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	70-85(60%)
+		   tsugcana	800
+	           >> tsugcana	All
+		SingleRepeat 10
+		CohortsRemoved	SpeciesList
+		   acerrubr	30-150
+		   betupapy	30-110
+		   betualle	30-300
+		   fraxnigr	30-150
+		   fraxpenn	30-150
+		   prunsero	30-200
+		   ulmuamer	30-85
+		   tsugcana	800
+
+Prescription	MM9-1_DO1 << Swamp_Hardwoods_Thinning
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acerrubr 	100		55
+		   betupapy	100		55
+		   betualle	100		55
+		   fraxpenn	100		55
+		   fraxnigr	100		55
+		   prunsero	100		55
+		   ulmuamer	100		55
+		MinimumAge	55
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-150 45 acerrubr
+		   Optional 55-110 45 betupapy
+		   Optional 55-300 45 betualle
+		   Optional 55-150 45 fraxpenn
+		   Optional 55-150 45 fraxnigr
+		   Optional 55-200 45 prunsero
+		   Optional 55-85 45 ulmuamer
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection	ASSUMES A THINNING FROM ABOVE (I.E. CUTTING THE OLDEST COHORTS)
+		>> -------	--------
+		   abiebals	50-80(5%)
+		   acerrubr 	100-150(10%)
+		   acersacc	150-250(5%)
+		   betualle 	200-300(10%)
+		   betupapy	80-110(10%)
+		   carycord	200-300(5%)
+		   fagugran	250-350(5%)
+		   fraxamer	150-200(5%)
+		   fraxnigr	100-150(10%)
+		   fraxpenn	100-150(10%)
+		   piceglau 	80-120(5%)
+		   picemari 	150-215(5%)
+		   pinubank	100-120(5%)
+		   pinuresi	200-250(5%)
+		   pinustro	250-350(5%)
+		   pinusylv	200-250(5%)
+		   popubals	80-120(5%)
+		   popugran	80-125(5%)
+		   poputrem	70-100(5%)
+		   prunsero	150-200(10%)
+		   queralba	200-400(5%)
+		   querelli	100-200(5%)
+		   quermacr 	150-300(5%)
+		   querrubr 	150-250(5%)
+		   quervelu	100-200(5%)
+		   thujocci	200-350(5%)
+		   tiliamer 	100-250(5%)
+		   ulmuamer	70-85(10%)
+		   tsugcana	800
+
+Prescription	MM10-1_DO1 << Swamp_Hardwoods_Patch
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acerrubr 	100		55
+		   betupapy	100		55
+		   betualle	100		55
+		   fraxpenn	100		55
+		   fraxnigr	100		55
+		   prunsero	100		55
+		   ulmuamer	100		55
+		MinimumAge	55
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-150 45 acerrubr
+		   Optional 55-110 45 betupapy
+		   Optional 55-300 45 betualle
+		   Optional 55-150 45 fraxpenn
+		   Optional 55-150 45 fraxnigr
+		   Optional 55-200 45 prunsero
+		   Optional 55-85 45 ulmuamer
+		SiteSelection  PatchCutting	55%   25
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   acerrubr 	55-150(20%)
+		   betupapy	55-110(20%)
+		   betualle	55-300(20%)
+		   fraxnigr	55-150(20%)
+		   fraxpenn	55-150(20%)
+		   prunsero	55-200(20%)
+		   ulmuamer	55-85(20%)
+		   tsugcana	800
+
+Prescription	MM11-1_DO1 << Upland_Spruce_Fir_Clearcut
+		StandRanking  Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   piceglau	100		55
+		   abiebals	100		40
+		MinimumAge	55 
+		ForestTypeTable << spruce fir
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-120 45 piceglau
+		   Optional 55-90 45 abiebals
+		SiteSelection PatchCutting   50%   250
+		CohortsRemoved ClearCut
+				
+Prescription	MM12-1_DO1 << Spruce_Fir_Seedtree
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   piceglau	100	55
+		   abiebals	100	40
+		MinimumAge	55
+		ForestTypeTable << spruce-fir
+		>> InclusionRule ageRange percentCells species
+		   Optional 55-120 45 piceglau
+		   Optional 55-90 45 abiebals
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	30-90(80%)
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	30-120(80%)
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+
+Prescription	MM13-1_DO1 << Jackpine_Clearcut_no_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   pinubank	100	35
+		MinimumAge	35
+		ForestTypeTable << jack pine
+		>> InclusionRule ageRange percentCells species
+		   Required 35-100 highest pinubank
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+			
+Prescription	MM14-1_DO1 << Jackpine_Clearcut_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   pinubank	100	35
+		   MinimumAge	35
+		ForestTypeTable << jack pine
+		>> InclusionRule ageRange percentCells species
+		   Required 35-100 highest pinubank
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+		Plant pinubank pinuresi
+
+Prescription	MM15-1_DO1 << Northern_Hardwoods_Patch  
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acersacc 	100		65
+		   fagugran	100		65
+		   fraxamer 	100		65
+		   tiliamer 	100		65
+		   carycord	100		65
+		   prunsero	100		65
+		   querrubr	100		65
+		MinimumAge	65
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 65-250 45 acersacc	
+		   Optional 65-350 45 fagugran	
+		   Optional 65-200 45 fraxamer
+		   Optional 65-250 45 tiliamer
+		   Optional 65-300 45 carycord
+		   Optional 65-200 45 prunsero
+		   Optional 65-150 45 querrubr
+		   SiteSelection PatchCutting   75%   25
+		CohortsRemoved	SpeciesList
+		>> Species 	Selection >> I limited max age slightly to account for 24" max dbh based on DNR prescription.
+		>> -------	--------
+		   acersacc 	40-200(15%)
+		   fraxamer 	40-150(15%)
+		   fagugran	40-300(15%)
+		   tiliamer 	40-200(15%)
+		   carycord	40-250(15%)
+		   prunsero	40-150(15%)
+		   querrubr	40-200(15%)
+		   tsugcana	800
+		
+Prescription	MM16-1_DO1 << North_Hardwood_Shelterwood  
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   acersacc 	100		65
+		   fagugran	100		65
+		   fraxamer 	100		65
+		   tiliamer 	100		65
+		   carycord	100		65
+		   prunsero	100		65
+		   querrubr	100		65
+		MinimumAge	65
+		ForestTypeTable << hardwoods
+		>> InclusionRule ageRange percentCells species
+		   Optional 65-250 45 acersacc	
+		   Optional 65-350 45 fagugran	
+		   Optional 65-200 45 fraxamer
+		   Optional 65-250 45 tiliamer
+		   Optional 65-300 45 carycord
+		   Optional 65-200 45 prunsero
+		   Optional 65-150 45 querrubr
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	50-250(60%)
+		   betualle 	All
+		   betupapy	All
+		   carycord	50-300(60%)
+		   fagugran	50-350(60%)
+		   fraxamer	50-200(60%)
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	50-200(60%)
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	50-250(60%)
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	50-250(60%)
+		   ulmuamer	All
+		   tsugcana	800
+		SingleRepeat 20
+		CohortsRemoved	SpeciesList
+		   acersacc	50-250
+		   carycord	50-300
+		   fagugran	50-350
+		   fraxamer	50-200
+		   prunsero	50-200
+		   querrubr 	50-250
+		   tiliamer	50-250
+		   tsugcana	800
+
+Prescription	MM17-1_DO1 << Oak_Clearcut_no_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100	50
+		   quermacr 	100	50
+		   queralba	100	50
+		   querelli	100	50
+		MinimumAge	50
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 50-250 45 querrubr
+		   Optional 50-300 45 quermacr
+		   Optional 50-400 45 queralba
+		   Optional 50-200 45	querelli
+		   Optional 50-200 45 quervelu
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+
+Prescription	MM18-1_DO1 << Oak_Clearcut_plant
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100	50
+		   quermacr 	100	50
+		   queralba	100	50
+		   querelli	100	50
+		MinimumAge	50
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 50-250 45 querrubr
+		   Optional 50-300 45 quermacr
+		   Optional 50-400 45 queralba
+		   Optional 50-200 45 querelli
+		   Optional 50-200 45 quervelu
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+		Plant pinubank pinuresi
+			
+Prescription	MM19-1_DO1 << Oak_Seedtree
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100	50
+		   quermacr 	100	50
+		   queralba	100	50
+		   querelli	100	50
+		MinimumAge	50
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 50-250 45 querrubr
+		   Optional 50-300 45 quermacr
+		   Optional 50-400 45 queralba
+		   Optional 50-200 45 querelli
+		   Optional 50-200 45 quervelu
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All 
+		   carycord	All
+		   fagugran	All	
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All 
+		   poputrem	All
+		   prunsero	All
+		   queralba	50-400(80%)
+		   querelli	50-200(80%)	
+		   quermacr 	50-300(80%)
+		   querrubr 	50-250(80%)
+		   quervelu	50-250(80%)
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+
+Prescription	MM20-1_DO1 << Oak_Shelterwood
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100	50
+		   quermacr 	100	50
+		   queralba	100	50
+		   querelli	100	50
+		   quervelu	100	50
+		MinimumAge	50
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 50-250 45 querrubr
+		   Optional 50-300 45 quermacr
+		   Optional 50-400 45 queralba
+		   Optional 50-200 45	querelli
+		   Optional 50-500 highrdy quervelu	
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	50-300(60%)
+		   fagugran	50-350(60%)
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	50-400(60%)
+		   querelli	50-200(60%)
+		   quermacr 	50-300(60%)
+		   querrubr 	50-250(60%)
+		   quervelu	50-200(60%)
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+		SingleRepeat 20
+		CohortsRemoved	SpeciesList
+		   queralba	50-400
+		   querelli	50-200
+		   quermacr 	50-300
+		   querrubr 	50-250
+		   quervelu	50-200
+		   fagugran	50-350
+		   tsugcana	800
+
+Prescription	MM21-1_DO1 << Oak_Thinning
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100	65
+		   quermacr 	100	65
+		   queralba	100	65
+		   querelli	100	65
+		   quervelu	100	65
+		MinimumAge	65
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 65-250 45 querrubr
+		   Optional 65-300 45 quermacr
+		   Optional 65-400 45 queralba
+		   Optional 65-200 45 querelli
+		   Optional 65-200 45 quervelu		
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection	ASSUMES A THINNING FROM ABOVE (I.E. CUTTING THE OLDEST COHORTS)
+		>> -------	--------
+		   abiebals	50-80(5%)
+		   acerrubr 	100-150(5%)
+		   acersacc	150-250(5%)
+		   betualle 	200-300(5%)
+		   betupapy	80-110(5%) 
+		   carycord	200-300(10%)
+		   fagugran	250-350(10%)
+		   fraxamer	150-200(5%)
+		   fraxnigr	100-150(5%)
+		   fraxpenn	100-150(5%)
+		   piceglau 	80-120(5%)
+		   picemari 	150-215(5%)
+		   pinubank	100-120(5%)
+		   pinuresi	200-250(5%)
+		   pinustro	250-350(5%)
+		   pinusylv	200-250(5%)
+		   popubals	80-120(5%)
+		   popugran	80-125(5%)
+		   poputrem	70-100(5%)
+		   prunsero	150-200(10%)
+		   queralba	200-400(10%)
+		   querelli	100-200(10%)
+		   quermacr 	150-300(10%)
+		   querrubr 	150-250(10%)
+		   quervelu	100-200(10%)
+		   thujocci	200-350(5%)
+		   tiliamer 	100-250(5%)
+		   ulmuamer	70-85(5%)
+		   tsugcana	800
+		
+Prescription	MM22-1_DO1 << Oak_Patch
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> -------	-----------	----------
+		   querrubr	100		65
+		   quermacr 	100		65
+		   queralba	100		65
+		   querelli	100		65
+		   quervelu	100		65
+		MinimumAge	50
+		ForestTypeTable << oak
+		>> InclusionRule ageRange percentCells species
+		   Optional 65-250 45 querrubr
+		   Optional 65-300 45 quermacr
+		   Optional 65-400 45 queralba
+		   Optional 65-200 45 querelli
+		   Optional 65-200 45 quervelu
+		SiteSelection PatchCutting   75%   25
+		CohortsRemoved	SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   fagugran	40-350(15%)
+		   quermacr 	40-300(15%)
+		   querrubr 	40-250(15%)
+		   carycord	40-300(15%)
+		   queralba	40-500(15%)
+		   querelli	40-200(15%)
+		   quervelu	40-200(15%)
+		   tsugcana	800
+
+Prescription	MM23-1_DO1 << Redpine_Clearcut_no_plant
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		35
+		MinimumAge	55
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest pinuresi
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+		
+Prescription	MM24-1_DO1 << Redpine_Clearcut_plant
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		35
+		MinimumAge	55
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest pinuresi
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+		Plant pinuresi pinubank
+
+Prescription	MM25-1_DO1 << Redpine_Seedtree
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		35
+		MinimumAge	55
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest pinuresi
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	40-70(80%)
+		   pinuresi	50-250(80%)
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+		
+Prescription	MM26-1_DO1 << Redpine_Shelterwood
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		35
+		MinimumAge	55
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest pinuresi
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	30-90(60%)
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	50-250(60%)
+		   picemari 	All
+		   pinubank	40-70(80%)
+		   pinuresi	50-250(60%)
+		   pinustro	50-250(60%)
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+		SingleRepeat 15
+		CohortsRemoved	SpeciesList
+		   pinuresi	20-250
+		   pinustro	20-350
+		   piceglau 	20-250
+		   abiebals	20-90
+		   tsugcana	800	
+
+Prescription	MM27-1_DO1 << Redpine_Thinning
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		40
+		MinimumAge	40
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 40-250 highest pinuresi
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	50-80(30%)
+		   acerrubr 	100-150(5%)
+		   acersacc	150-250(5%)
+		   betualle 	200-300(5%)
+		   betupapy	80-110(5%) 
+		   carycord	200-300(5%)
+		   fagugran	250-350(5%)
+		   fraxamer	150-200(5%)
+		   fraxnigr	100-150(5%)
+		   fraxpenn	100-150(5%)
+		   piceglau 	80-120(5%)
+		   picemari 	150-215(5%)
+		   pinubank	100-120(5%)
+		   pinuresi	30-250(30%)
+		   pinustro	30-350(30%)
+		   pinusylv	200-250(5%)
+		   popubals	80-120(5%)
+		   popugran	80-125(5%)
+		   poputrem	70-100(5%)
+		   prunsero	150-200(5%)
+		   queralba	200-400(5%)
+		   querelli	100-200(5%)
+		   quermacr 	150-300(5%)
+		   querrubr 	150-250(5%)
+		   quervelu	100-200(5%)
+		   thujocci	200-350(5%)
+		   tiliamer 	100-250(5%)
+		   ulmuamer	70-85(5%)
+		   tsugcana	800
+
+Prescription	MM28-1_DO1 << Redpine_Patch
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinuresi	100		50
+		MinimumAge	50
+		ForestTypeTable << red pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest pinuresi
+		SiteSelection PatchCutting   75%   25
+		CohortsRemoved	SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   pinubank	50-120(15%)
+		   pinuresi	50-250(15%)
+		   pinustro	50-350(15%)
+		   pinusylv	50-250(15%)
+		   tsugcana	800
+
+Prescription	MM29-1_DO1 << Black_Spruce_Swamp_Clearcut
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   picemari	100		55
+		MinimumAge	55
+		ForestTypeTable << black spruce
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest picemari
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+	
+Prescription	MM30-1_DO1 << Black_Spruce_Swamp_Seedtree
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   picemari	100		55
+		MinimumAge	55
+		ForestTypeTable << black spruce
+		>> InclusionRule ageRange percentCells species
+		   Required 55-250 highest picemari
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	50-215(80%)
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	All
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+
+Prescription	MM31-1_DO1 << White_Pine_Clearcut
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinustro	100		55
+		MinimumAge	55
+		ForestTypeTable << white pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-350 highest pinustro
+		SiteSelection Complete
+		CohortsRemoved ClearCut
+	
+Prescription	MM32-1_DO1 << White_Pine_Seedtree
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinustro	100		55
+		MinimumAge	55
+		ForestTypeTable << white pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-350 highest pinustro
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	All
+		   pinustro	50-350(75%)
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800
+		
+Prescription	MM33-1_DO1 << White_Pine_Shelterwood
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinustro	100		55
+		MinimumAge	55
+		ForestTypeTable << white pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-350 highest pinustro
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	All
+		   acerrubr 	All
+		   acersacc	All
+		   betualle 	All
+		   betupapy	All
+		   carycord	All
+		   fagugran	All
+		   fraxamer	All
+		   fraxnigr	All
+		   fraxpenn	All
+		   piceglau 	All
+		   picemari 	All
+		   pinubank	All
+		   pinuresi	50-250(50%)
+		   pinustro	50-350(50%)
+		   pinusylv	All
+		   popubals	All
+		   popugran	All
+		   poputrem	All
+		   prunsero	All
+		   queralba	All
+		   querelli	All
+		   quermacr 	All
+		   querrubr 	All
+		   quervelu	All
+		   thujocci	All
+		   tiliamer 	All
+		   ulmuamer	All
+		   tsugcana	800		
+		SingleRepeat 15
+		CohortsRemoved	SpeciesList
+		   pinuresi	20-250
+		   pinustro	20-350
+
+Prescription	MM34-1_DO1 << White_Pine_Thinning
+		StandRanking	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinustro	100		55
+		MinimumAge	55
+		ForestTypeTable << white pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-350 highest pinustro
+		SiteSelection Complete
+		CohortsRemoved SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   abiebals	50-80(5%)
+		   acerrubr 	100-150(5%)
+		   acersacc	150-250(5%)
+		   betualle 	200-300(5%)
+		   betupapy	80-110(5%) 
+		   carycord	200-300(5%)
+		   fagugran	250-350(5%)
+		   fraxamer	150-200(5%)
+		   fraxnigr	100-150(5%)
+		   fraxpenn	100-150(5%)
+		   piceglau 	80-120(5%)
+		   picemari 	150-215(5%)
+		   pinubank	100-120(5%)
+		   pinuresi	30-250(30%)
+		   pinustro	30-350(30%)
+		   pinusylv	200-250(5%)
+		   popubals	80-120(5%)
+		   popugran	80-125(5%)
+		   poputrem	70-100(5%)
+		   prunsero	150-200(5%)
+		   queralba	200-400(5%)
+		   querelli	100-200(5%)
+		   quermacr 	150-300(5%)
+		   querrubr 	150-250(5%)
+		   quervelu	100-200(5%)
+		   thujocci	200-350(5%)
+		   tiliamer 	100-250(5%)
+		   ulmuamer	70-85(5%)
+		   tsugcana	800
+		
+Prescription 	MM35-1_DO1 << White_Pine_Patch
+		StandRanking 	Economic
+		>> Species	EconomicRank	MinimumAge
+		>> ------	------------	-----------
+		   pinustro	100		55
+		MinimumAge	55
+		ForestTypeTable << white pine
+		>> InclusionRule ageRange percentCells species
+		   Required 55-350 highest pinustro
+		SiteSelection PatchCutting   75%   25	
+		CohortsRemoved	SpeciesList
+		>> Species 	Selection
+		>> -------	--------
+		   pinustro	55-350(20%)
+		   pinuresi	55-250(20%)
+		   pinubank	55-250(20%)
+		   pinusylv	55-250(20%)
+		   tsugcana	800
+
+>> ----------------------
+   HarvestImplementations
+>> ----------------------
+
+>> Prescriptions from MM's 29 and 30 are not implemented.
+>> MA	Presc		target%	Start	Stop	COMMENTS
+   1	MM2-1_DO1	0.02%	0	70   << Aspen_Clearcut_plant
+   1	MM14-1_DO1	0.12%	0	70   << Jackpine_Clearcut_plant
+   1	MM16-1_DO1	0.11%	0	70   << North_Hardwood_Shelterwood
+   1	MM15-1_DO1	4.62%	0	70   << Northern_Hardwoods_Patch
+   1	MM18-1_DO1	0.05%	0	70   << Oak_Clearcut_plant
+   1	MM22-1_DO1	1.04%	0	70   << Oak_Patch
+   1	MM19-1_DO1	0.10%	0	70   << Oak_Seedtree
+   1	MM20-1_DO1	0.42%	0	70   << Oak_Shelterwood
+   1	MM21-1_DO1	1.43%	0	70   << Oak_Thinning
+   1	MM4-1_DO1	0.04%	0	70   << Paperbirch_Seedtree
+   1	MM5-1_DO1	0.01%	0	70   << Paperbirch_Shelterwood
+   1	MM28-1_DO1	0.16%	0	70   << Redpine_Patch
+   1	MM25-1_DO1	0.02%	0	70   << Redpine_Seedtree
+   1	MM26-1_DO1	0.04%	0	70   << Redpine_Shelterwood
+   1	MM27-1_DO1	0.52%	0	70   << Redpine_Thinning
+   1	MM12-1_DO1	0.10%	0	70   << Spruce_Fir_Seedtree
+   1	MM10-1_DO1	0.10%	0	70   << Swamp_Hardwoods_Patch
+   1	MM7-1_DO1	0.02%	0	70   << Swamp_Hardwoods_Seedtree
+   1	MM8-1_DO1	0.05%	0	70   << Swamp_Hardwoods_Shelterwood
+   1	MM9-1_DO1	0.02%	0	70   << Swamp_Hardwoods_Thinning
+   1	MM35-1_DO1	0.30%	0	70   << White_Pine_Patch
+   1	MM32-1_DO1	0.07%	0	70   << White_Pine_Seedtree
+   1	MM33-1_DO1	0.12%	0	70   << White_Pine_Shelterwood
+   1	MM34-1_DO1	0.31%	0	70   << White_Pine_Thinning
+
+>> -------
+>> OUTPUTS
+>> -------
+
+   PrescriptionMaps	harvest/prescripts-{timestep}.img
+   BiomassMaps		harvest/biomass-removed-{timestep}.img
+   EventLog		harvest/event-log.csv
+   SummaryLog		harvest/summary-log.csv

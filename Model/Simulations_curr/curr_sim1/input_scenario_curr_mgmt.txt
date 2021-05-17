@@ -1,0 +1,30 @@
+LandisData  Scenario
+Duration  71
+
+Species         MI_species_6_14_2013.txt
+Ecoregions      MI_Ecoregions.txt
+EcoregionsMap   MI_eco_5_1_2013A.img
+
+CellLength  142 << meters
+
+>> Succession Extension        Initialization File
+>> --------------------	       -------------------
+   "Biomass Succession"        input_BSE_curr.txt
+
+>> Disturbance Extensions      Initialization File
+>> ----------------------      -------------------
+   "Base Wind"		       input_Wind.txt
+>> "Biomass Harvest"   	       input_SHE_BHE.txt
+
+>> DisturbancesRandomOrder  yes  << optional parameter; default = no
+
+>> Other Extensions            Initialization File
+>> ----------------            -------------------
+>> "Max Species Age"	       output-max-spp-age.txt
+   "Output Biomass"    	       output-biomass.txt
+>> "Output Biomass Reclass"    output_reclass-biomass-output.txt
+   "Output Cohort Statistics"  cohort-stats.output.txt
+   "Output Max Species Age"    max-spp-age.output.txt
+
+>> RandomNumberSeed  4,357  << optional parameter; default = the seed is
+                            << randomly generated using the current time
