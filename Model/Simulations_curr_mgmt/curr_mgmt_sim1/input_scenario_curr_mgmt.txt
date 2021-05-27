@@ -13,18 +13,19 @@ CellLength  142 << meters
 
 >> Disturbance Extensions      Initialization File
 >> ----------------------      -------------------
-  "Base Wind"		       input_Wind.txt
-  "Biomass Harvest"   	       input_SHE_BHE.txt
+   "Base Wind"		       input_Wind.txt
+>>   "Biomass Harvest"		 input_SHE_BHE.txt
+   "SOSIEL Harvest"            input_SHE.txt
 
 >> DisturbancesRandomOrder  yes  << optional parameter; default = no
 
 >> Other Extensions            Initialization File
 >> ----------------            -------------------
->> "Max Species Age"	       output-max-spp-age.txt
+>>   "Max Species Age"	       output-max-spp-age.txt
    "Output Biomass"    	       output-biomass.txt
->> "Output Biomass Reclass"    output_reclass-biomass-output.txt
-   "Output Cohort Statistics"  cohort-stats.output.txt
-   "Output Max Species Age"    max-spp-age.output.txt
+>>   "Output Biomass Reclass"    output_reclass-biomass-output.txt
+>>   "Output Cohort Statistics"  cohort-stats.output.txt
+>>   "Output Max Species Age"    max-spp-age.output.txt
 
 >> RandomNumberSeed  4,357  << optional parameter; default = the seed is
                             << randomly generated using the current time

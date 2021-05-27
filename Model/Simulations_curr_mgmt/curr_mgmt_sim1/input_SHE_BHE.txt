@@ -1,4 +1,4 @@
->> Name: input_BHE_SHE.txt
+>> Name: input_SHE_BHE.txt
 >> Description: Biomass Harvest extension's (BHE's) input file, modified for compatibility
 >>>> with the SOSIEL Harvest extension (SHE).
 >> First author: Matthew Duveneck.
