@@ -20,4 +20,4 @@
 >> -----             --     --------------     ---------------
 >> Agent             MA     Site selection     Simulation mode
 >> -----             --     --------------     ---------------
-   ForestManager     1      RandomWalk         2
+   ForestManager01   1      RandomWalk         2
