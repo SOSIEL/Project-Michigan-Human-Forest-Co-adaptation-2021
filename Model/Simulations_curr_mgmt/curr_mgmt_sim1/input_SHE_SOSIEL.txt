@@ -85,6 +85,6 @@
 >> Variable       Variable     File 			                  Ignore first
 >> parameter      type	       name			                  line
 >> ----------     --------     ----			                  ------------
-   Birth          Integer      input_SHE_SOSIEL_Birth_probability.csv     yes
-   Death          Integer      input_SHE_SOSIEL_Death_probability.csv     yes
-   General        Integer      input_SHE_SOSIEL_General_probability.csv   yes
+   Birth          Integer      input_SHE_SOSIEL_Probability_birth.csv     yes
+   Death          Integer      input_SHE_SOSIEL_Probability_death.csv     yes
+   General        Integer      input_SHE_SOSIEL_Probability_general.csv   yes
