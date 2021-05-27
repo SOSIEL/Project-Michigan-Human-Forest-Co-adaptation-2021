@@ -13,11 +13,11 @@
 >> Extension            Extension
 >> name                 file
 >> ---------            ---------
-   "SOSIEL Harvest"	input_SHE SOSIEL.txt
+   "SOSIEL Harvest"	input_SHE_SOSIEL.txt
    "Biomass Harvest"	input_SHE_BHE.txt     << MI_BAU_harvest_2013.txt
 
    AgentToManagementArea
 >> -----             --     --------------     ---------------
 >> Agent             MA     Site selection     Simulation mode
 >> -----             --     --------------     ---------------
-   ForestManager     2      RandomWalk         2
+   ForestManager     1      RandomWalk         2
