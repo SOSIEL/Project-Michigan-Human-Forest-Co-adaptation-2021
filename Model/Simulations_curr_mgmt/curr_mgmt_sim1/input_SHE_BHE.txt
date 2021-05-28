@@ -9,9 +9,9 @@
 
    Timestep 5
 
-   ManagementAreas	man_area_split_pnif5.img
+   ManagementAreas	input_Map_ManageArea_Ecoregion.img
 
-   Stands		stand_8_13_alg1.img
+   Stands		input_Map_stand_8_13_alg1.img
 
 Prescription	MM1-1_DO1 << Aspen_Clearcut_no_plant
 		StandRanking	Economic

@@ -8,7 +8,7 @@
 SHE: ***** Executing mode #2 *****
 	Run Sosiel with parameters:
 	Area:1
-		Biomass:            116,751,228
+		Biomass:            23,377,074
 		Harvested:                   0
 		MaturityPercent:          0.00
   SosielHarvestAlgorithm: Initializing first iteration...
