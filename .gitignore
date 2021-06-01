@@ -15,6 +15,7 @@ simulation-*.log
 Metadata/
 biomass/
 biomass-succession/
+wind/
 1_bms_af_bl/
 harvest/
 bda/
