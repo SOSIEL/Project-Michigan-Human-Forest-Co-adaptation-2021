@@ -1,0 +1,15 @@
+  Loading DecisionOptionAttributes from input_SHE_SOSIEL_DOAttributes.csv
+  Loading DecisionOptionAntecedentAttributes from input_SHE_SOSIEL_DOAntecedentAttributes.csv
+  Loading AgentGoalAttributes from input_SHE_SOSIEL_AgentGoalAttributes.csv
+  Loading AgentVariables from input_SHE_SOSIEL_AgentVariables.csv
+  Loading AgentDecisionOptionAttributes from input_SHE_SOSIEL_AgentDOAttributes.csv
+  SosielHarvestAlgorithm: Initializing agents...
+  SosielHarvestAlgorithm: Initializing probabilities...
+SHE: ***** Executing mode #2 *****
+	Run Sosiel with parameters:
+	Area:1
+		Biomass:            23,377,074
+		Harvested:                   0
+		MaturityPercent:          0.00
+  SosielHarvestAlgorithm: Initializing first iteration...
+Exception: Exception of type 'SOSIEL.Exceptions.UnknownVariableException' was thrown.
