@@ -1,47 +1,79 @@
 >> Name: input_SHE_SOSIEL.txt
 >> Description: The SOSIEL algorithm's main input file for parameterizing agents.
 >> Author: G. Sotnik.
->> Last updated: May 27th, 2021
+>> Last updated: June 12th, 2021
 
    CognitiveLevel	CL4
 
    GoalAttributes
->> ---------	     ----     		      --------                     -----------------             			--------------     ----------     ------------------
->> Agent	     Goal     		      Goal                         Reference                     			Change focal       Is             Focal value
->> archetype         name     		      tendency                     variable                      			value on prior     cumulative     reference variable
->> ---------	     ----		      --------                     -----------------             			--------------     ----------     ------------------
-   ForestManager     G1_abiebals_1	      EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_1
+>> ---------	     ----     		--------                     -----------------             			--------------     ----------     ------------------
+>> Agent	     Goal     		Goal                         Reference                     			Change focal       Is             Focal value
+>> archetype         name     		tendency                     variable                      			value on prior     cumulative     reference variable
+>> ---------	     ----		--------                     -----------------             			--------------     ----------     ------------------
+>>   ForestManager	G1_abiebals_1	EqualToOrAboveFocalValue	CurrentAverageAboveGroundSpeciesBiomass_abiebals_1		no		yes		InitialAverageAboveGroundSpeciesBiomass_abiebals_1
+>>   ForestManager	G2_acerrubr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_1
+>>   ForestManager	G3_acersacc_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_1
+>>   ForestManager	G4_betualle_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_1
+>>   ForestManager	G5_betupapy_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_1
+>>   ForestManager	G6_fagugran_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_1
+>>   ForestManager	G7_fraxamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_1
+>>   ForestManager	G8_fraxnigr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_1
+>>   ForestManager	G9_fraxpenn_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_1
+>>   ForestManager	G10_piceglau_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_1
+>>   ForestManager	G11_picemari_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_1
+>>   ForestManager	G12_pinubank_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_1
+>>   ForestManager	G13_pinuresi_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_1
+>>   ForestManager	G14_pinustro_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_1
+>>   ForestManager	G15_pinusylv_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_1
+
+   ForestManager	G16_popubals_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_1
+   ForestManager	G17_popugran_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_1
+   ForestManager	G18_poputrem_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_1
+
+>>   ForestManager	G19_prunsero_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_1
+>>   ForestManager	G20_queralba_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_1
+>>   ForestManager	G21_querelli_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_1
+>>   ForestManager	G22_querrubr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_1
+>>   ForestManager	G23_quervelu_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_1
+>>   ForestManager	G24_thujocci_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_1
+>>   ForestManager	G25_tiliamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_1
+>>   ForestManager	G26_tsugcana_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_1
+>>   ForestManager	G27_ulmuamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_1
 
    MentalModelAttributes
 >> ------------------------------------------------------------------------------------------------------------------------------------
->> Archetype		Mental		Modifiable	Max #      DO goal relationship	Assosiated	Consequent	Consequent     		 
->> name			(sub-)model			of DOs     (required if		with		value		value
->> 								   MM is modifiable)	goals		range		rounding 
+>> Archetype		Mental		Modifiable		Max #					DO goal relationship	   Assosiated		Consequent	Consequent     		 
+>> name				model						of DOs (required if									with			value		value
+>> 												MM is modifiable)										goals		range		rounding 
 >> ------------------------------------------------------------------------------------------------------------------------------------
-   ForestManager	MM2-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM4-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM5-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM7-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM8-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM9-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM10-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM12-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM14-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM15-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM16-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM18-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM19-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM20-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM21-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM22-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM25-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM26-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM27-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM28-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM32-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM33-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM34-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
-   ForestManager	MM35-1		yes		3	   G1_abiebals_1<->	G1_abiebals_1	0.0001-100.00	4
+   ForestManager	MM2-1		yes				5						G16_popubals_1<->;G17_popugran_1<->;G18_poputrem_1<->	G16_popubals_1;G17_popugran_1;G18_poputrem_1		0.0001-100.00	4
+>>   ForestManager	MM4-1		yes				5	   					G2_acerrubr_1<->										G2_acerrubr_1										0.0001-100.00	4
+>>   ForestManager	MM5-1		yes				5	   					G3_acersacc_1<->										G3_acersacc_1										0.0001-100.00	4
+>>   ForestManager	MM7-1		yes				5	   					G4_betualle_1<->	   G4_betualle_1	0.0001-100.00	4
+>>   ForestManager	MM8-1		yes				5	   					G5_betupapy_1<->	   G5_betupapy_1	0.0001-100.00	4
+>>   ForestManager	MM9-1		yes				5	   					G6_fagugran_1<->	   G6_fagugran_1	0.0001-100.00	4
+>>   ForestManager	MM10-1		yes				5	   					G7_fraxamer_1<->	   G7_fraxamer_1	0.0001-100.00	4
+>>   ForestManager	MM12-1		yes				5	   					G8_fraxnigr_1<->	   G8_fraxnigr_1	0.0001-100.00	4
+>>   ForestManager	MM14-1		yes				5	   					G9_fraxpenn_1<->	   G9_fraxpenn_1	0.0001-100.00	4
+>>   ForestManager	MM15-1		yes				5	   					G10_piceglau_1<->	   G10_piceglau_1	0.0001-100.00	4
+>>   ForestManager	MM16-1		yes				5	   					G11_picemari_1<->	   G11_picemari_1	0.0001-100.00	4
+>>   ForestManager	MM18-1		yes				5	   					G12_pinubank_1<->	   G12_pinubank_1	0.0001-100.00	4
+>>   ForestManager	MM19-1		yes				5	   					G13_pinuresi_1<->	   G13_pinuresi_1	0.0001-100.00	4
+>>   ForestManager	MM20-1		yes				5	   					G14_pinustro_1<->	   G14_pinustro_1	0.0001-100.00	4
+>>   ForestManager	MM21-1		yes				5	   					G15_pinusylv_1<->	   G15_pinusylv_1	0.0001-100.00	4
+>>   ForestManager	MM22-1		yes				5	   					G16_popubals_1<->	   G16_popubals_1	0.0001-100.00	4
+>>   ForestManager	MM25-1		yes				5	   					G17_popugran_1<->	   G17_popugran_1	0.0001-100.00	4
+>>   ForestManager	MM26-1		yes				5	   					G18_poputrem_1<->	   G8_poputrem_1	0.0001-100.00	4
+>>   ForestManager	MM27-1		yes				5	   					G19_prunsero_1<->	   G19_prunsero_1	0.0001-100.00	4
+>>   ForestManager	MM28-1		yes				5	   					G20_queralba_1<->	   G20_queralba_1	0.0001-100.00	4
+>>   ForestManager	MM32-1		yes				5	   					G21_querelli_1<->	   G21_querelli_1	0.0001-100.00	4
+>>   ForestManager	MM33-1		yes				5	   					G22_querrubr_1<->	   G22_querrubr_1	0.0001-100.00	4
+>>   ForestManager	MM34-1		yes				5	   					G23_quervelu_1<->	   G23_quervelu_1	0.0001-100.00	4
+>>   ForestManager	MM35-1		yes				5	   					G24_thujocci_1<->	   G24_thujocci_1	0.0001-100.00	4
+>>   ForestManager	MM33-1		yes				5	   					G25_tiliamer_1<->	   G25_tiliamer_1	0.0001-100.00	4
+>>   ForestManager	MM34-1		yes				5	   					G26_tsugcana_1<->	   G26_tsugcana_1	0.0001-100.00	4
+>>   ForestManager	MM35-1		yes				5	   					G27_tulmuamer_1<->	   G27_tulmuamer_1	0.0001-100.00	4
+
 
    DecisionOptionAttributes               input_SHE_SOSIEL_DOAttributes.csv
 

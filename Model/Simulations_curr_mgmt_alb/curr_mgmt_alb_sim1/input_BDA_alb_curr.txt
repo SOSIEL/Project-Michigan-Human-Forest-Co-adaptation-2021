@@ -141,8 +141,6 @@ SRDMode	mean
    acersacc  2    0.1 	  08  0.5      18  1.0       2    0.1 	  08  0.5      18  1.0		no  << Silver maple; Secondary host; Gustafson et al. (2018)	  
    betualle  20   0.1 	  80  0.5      180 1.0       20   0.1 	  80  0.5      180 1.0		no  << Swamp birch; Minor host
    betupapy  7    0.1 	  30  0.5      999 1.0       7    0.1 	  30  0.5      999 1.0		no  << Paper birch; Minor host	  
-   carycord  10   0.1 	  40  0.5      999 1.0       10   0.1 	  40  0.5      999 1.0		no  << Bitternut hickory; Minor host
-   caryovat  15   0.1	  60  0.5      999 1.0       15   0.1	  60  0.5      999 1.0		no  << Shagbark hickory; Minor host
    fagugran  40   0.1	  100 0.5      225 1.0       40   0.1	  100 0.5      225 1.0		no  << American beech; Minor host
    fraxamer  10   0.1	  30  0.5      70  1.0       10   0.1	  30  0.5      70  1.0		no  << American ash; Minor host; Gustafson et al. (2018)
    fraxnigr  13   0.1	  53  0.5      118 1.0       13   0.1	  53  0.5      118 1.0		no  << Black ash; Minor host

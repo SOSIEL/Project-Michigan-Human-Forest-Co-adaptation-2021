@@ -1,17 +1,17 @@
-LandisData "Biomass Succession"
+   LandisData "Biomass Succession"
 
-Timestep 5																											
-SeedingAlgorithm	WardSeedDispersal																											
+   Timestep 5																											
+   SeedingAlgorithm	WardSeedDispersal																											
 
-InitialCommunities      MI_init_comm2_2_2013.txt
-InitialCommunitiesMap   MI_IC_2_11_2013a.img
+   InitialCommunities      MI_init_comm2_2_2013.txt
+   InitialCommunitiesMap   MI_IC_2_11_2013a.img
 
->>keep off unless running single cell.
-CalibrateMode no
+>> keep off unless running single cell.
+   CalibrateMode no
 
 
-SpinupMortalityFraction	0.01
-MinRelativeBiomass																																																								
+   SpinupMortalityFraction	0.01
+   MinRelativeBiomass																																																								
 
 >> Shade	Min Relative Biomass (% Maximum Biomass)																											
 >> Class	by Ecoregions					

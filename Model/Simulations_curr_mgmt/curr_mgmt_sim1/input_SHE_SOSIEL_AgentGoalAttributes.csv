@@ -1,2 +1,2 @@
 Agent,Archetype,Goals,Goal focal values,Goal importance,Goal value range
-ForestManager01,ForestManager,G1_abiebals_1,G1_abiebals_1<3180>,G1_abiebals_1<1.0>,G1_abiebals_1<0;100000>
+ForestManager01,ForestManager,G16_popubals_1;G17_popugran_1;G18_poputrem_1,,G16_popubals_1<0.33>;G17_popugran_1<0.33>;G18_poputrem_1<0.33>,G16_popubals_1<0;100000>;G17_popugran_1<0;100000>;G18_poputrem_1<0;100000>
