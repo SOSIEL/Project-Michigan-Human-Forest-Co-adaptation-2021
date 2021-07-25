@@ -1,2 +1,2 @@
 Agent,DecisionOptions
-ForestManager01,MM2-1_DO1<G16_popubals_1<1>;G17_popugran_1<1>;G18_poputrem_1<1>>
+ForestManager01,MM2-1_DO1<G16<1>|G17<1>|G18<1>>

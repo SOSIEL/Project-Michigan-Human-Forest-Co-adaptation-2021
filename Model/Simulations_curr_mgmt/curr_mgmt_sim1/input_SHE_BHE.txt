@@ -10,9 +10,9 @@
 
    Timestep 5
 
-   ManagementAreas	input_Map_ManageArea_Ecoregion.img
+   ManagementAreas	input_Map_MAxE.img
 
-   Stands		input_Map_Stands.img	<< stand_8_13_alg1.img
+   Stands		input_Map_stands_final.img
 
 Prescription	MM1-1_DO1 << Aspen_Clearcut_no_plant
 		StandRanking	Economic
@@ -1384,56 +1384,6 @@ Prescription 	MM35-1_DO1 << White_Pine_Patch
    7	MM33-1_DO1	0.12%        0		70   << White_Pine_Shelterwood
    7	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
    7	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
-
-   8	MM2-1_DO1	0.02%        0		70   << Aspen_Clearcut_plant
-   8	MM4-1_DO1	0.04%        0		70   << Paperbirch_Seedtree
-   8	MM5-1_DO1	0.01%        0		70   << Paperbirch_Shelterwood
-   8	MM7-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Seedtree
-   8	MM8-1_DO1	0.05%        0		70   << Swamp_Hardwoods_Shelterwood
-   8	MM9-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Thinning
-   8	MM10-1_DO1	0.10%        0		70   << Swamp_Hardwoods_Patch
-   8	MM12-1_DO1	0.10%        0		70   << Spruce_Fir_Seedtree
-   8	MM14-1_DO1	0.12%        0		70   << Jackpine_Clearcut_plant	
-   8	MM15-1_DO1	4.62%        0		70   << Northern_Hardwoods_Patch
-   8	MM16-1_DO1	0.11%        0		70   << North_Hardwood_Shelterwood
-   8	MM18-1_DO1	0.05%        0		70   << Oak_Clearcut_plant
-   8	MM19-1_DO1	0.10%        0		70   << Oak_Seedtree
-   8	MM20-1_DO1	0.42%        0		70   << Oak_Shelterwood
-   8	MM21-1_DO1	1.43%        0		70   << Oak_Thinning
-   8	MM22-1_DO1	1.04%        0		70   << Oak_Patch
-   8	MM25-1_DO1	0.02%        0		70   << Redpine_Seedtree
-   8	MM26-1_DO1	0.04%        0		70   << Redpine_Shelterwood
-   8	MM27-1_DO1	0.52%        0		70   << Redpine_Thinning
-   8	MM28-1_DO1	0.16%        0		70   << Redpine_Patch
-   8	MM32-1_DO1	0.07%        0		70   << White_Pine_Seedtree
-   8	MM33-1_DO1	0.12%        0		70   << White_Pine_Shelterwood
-   8	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
-   8	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
-
-   9	MM2-1_DO1	0.02%        0		70   << Aspen_Clearcut_plant
-   9	MM4-1_DO1	0.04%        0		70   << Paperbirch_Seedtree
-   9	MM5-1_DO1	0.01%        0		70   << Paperbirch_Shelterwood
-   9	MM7-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Seedtree
-   9	MM8-1_DO1	0.05%        0		70   << Swamp_Hardwoods_Shelterwood
-   9	MM9-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Thinning
-   9	MM10-1_DO1	0.10%        0		70   << Swamp_Hardwoods_Patch
-   9	MM12-1_DO1	0.10%        0		70   << Spruce_Fir_Seedtree
-   9	MM14-1_DO1	0.12%        0		70   << Jackpine_Clearcut_plant	
-   9	MM15-1_DO1	4.62%        0		70   << Northern_Hardwoods_Patch
-   9	MM16-1_DO1	0.11%        0		70   << North_Hardwood_Shelterwood
-   9	MM18-1_DO1	0.05%        0		70   << Oak_Clearcut_plant
-   9	MM19-1_DO1	0.10%        0		70   << Oak_Seedtree
-   9	MM20-1_DO1	0.42%        0		70   << Oak_Shelterwood
-   9	MM21-1_DO1	1.43%        0		70   << Oak_Thinning
-   9	MM22-1_DO1	1.04%        0		70   << Oak_Patch
-   9	MM25-1_DO1	0.02%        0		70   << Redpine_Seedtree
-   9	MM26-1_DO1	0.04%        0		70   << Redpine_Shelterwood
-   9	MM27-1_DO1	0.52%        0		70   << Redpine_Thinning
-   9	MM28-1_DO1	0.16%        0		70   << Redpine_Patch
-   9	MM32-1_DO1	0.07%        0		70   << White_Pine_Seedtree
-   9	MM33-1_DO1	0.12%        0		70   << White_Pine_Shelterwood
-   9	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
-   9	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
 
 >> -------
 >> OUTPUTS

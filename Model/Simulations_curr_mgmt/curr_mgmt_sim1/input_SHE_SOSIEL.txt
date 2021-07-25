@@ -26,9 +26,9 @@
 >>   ForestManager	G14_pinustro_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_1
 >>   ForestManager	G15_pinusylv_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_1
 
-   ForestManager	G16_popubals_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_1
-   ForestManager	G17_popugran_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_1
-   ForestManager	G18_poputrem_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_1
+   ForestManager	G16	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_1
+   ForestManager	G17	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_1
+   ForestManager	G18	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_1
 
 >>   ForestManager	G19_prunsero_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_1
 >>   ForestManager	G20_queralba_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_1
