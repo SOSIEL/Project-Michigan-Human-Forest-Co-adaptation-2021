@@ -3,9 +3,9 @@
    LandisData			Scenario
    Duration			71
 
-   Species			input_Scenario_Species.txt
-   Ecoregions			input_Scenario_Ecoregions.txt
-   EcoregionsMap		input_Map_Scenario_Ecoregions.img	<< MI_eco_5_1_2013A.img
+   Species			input_Scenario_species.txt
+   Ecoregions			input_Scenario_ecoregions.txt
+   EcoregionsMap		input_Scenario_Map_ecoregions.img	<< MI_eco_5_1_2013A.img
 
    CellLength			142	<< meters
 

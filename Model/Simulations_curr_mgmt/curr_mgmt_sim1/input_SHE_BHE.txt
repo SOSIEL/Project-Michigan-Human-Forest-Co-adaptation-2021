@@ -1,34 +1,19 @@
 >> Name: input_SHE_BHE.txt
 >> Description: Biomass Harvest extension's (BHE's) input file, modified for compatibility
->>>> with the SOSIEL Harvest extension (SHE).
+>>>> with the SOSIEL Harvest extension (SHE) and the project.
 >> First author: Matthew Duveneck.
->> Second author: Garry Sotnik. Introduced new MAs (1-9), removed prescriptions unrelated to
->>>> non-industrial management, changed prescription names for compatibiltiy with SHE, and
+>> Second author: Garry Sotnik. Introduced new ecoregion-based sub-MAs (1-9) in the original 
+>>>> MA 1 (non-industrial forest owners), removed prescriptions unrelated to non-industrial
+>>>> forest management, changed prescription names for compatibility with SHE, and
 >>>> added prescriptions for all nine managers.
 
    LandisData "Biomass Harvest"
 
    Timestep 5
 
-   ManagementAreas	input_Map_MAxE.img
+   ManagementAreas	input_SHE_BHE_Map_maXe.img
 
-   Stands		input_Map_stands_final.img
-
-Prescription	MM1-1_DO1 << Aspen_Clearcut_no_plant
-		StandRanking	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> -------	-----------	----------
-		   poputrem	100	35
-		   popugran	100	35
-		   popubals	100	35
-		MinimumAge	35
-		ForestTypeTable << aspen
-		>> InclusionRule ageRange percentCells species
-		   Optional 35-90 45 poputrem
-		   Optional 35-90 45 popugran
-		   Optional 35-100 45 popubals
-		SiteSelection Complete
-		CohortsRemoved ClearCut
+   Stands		input_SHE_BHE_Map_stands.img
 
 Prescription	MM2-1_DO1 << Aspen_Clearcut_plant
 		StandRanking	Economic
@@ -46,18 +31,6 @@ Prescription	MM2-1_DO1 << Aspen_Clearcut_plant
 		SiteSelection Complete
 		CohortsRemoved ClearCut
 		Plant pinuresi pinubank
-
-Prescription	MM3-1_DO1 << Paperbirch_Clearcut
-		StandRanking	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> -------	-----------	----------
-		   betupapy	100	35
-		MinimumAge	35
-		ForestTypeTable << aspen
-		>> InclusionRule ageRange percentCells species
-		   Required 35-100 highest betupapy
-		SiteSelection Complete
-		CohortsRemoved ClearCut
 				
 Prescription	MM4-1_DO1 << Paperbirch_Seedtree
 		StandRanking	Economic
@@ -155,30 +128,6 @@ Prescription	MM5-1_DO1 << Paperbirch_Shelterwood
 		   prunsero	30-200
 		   tiliamer 	30-250
 		   tsugcana	800
-
-Prescription	MM6-1_DO1 << Swamp_Hardwoods_Clear
-		StandRanking	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   acerrubr 	100		55
-		   betupapy	100		55
-		   betualle	100		55
-		   fraxpenn	100		55
-		   fraxnigr	100		55
-		   prunsero	100		55
-		   ulmuamer	100		55
-		MinimumAge	55
-		ForestTypeTable << hardwoods
-		>> InclusionRule ageRange percentCells species
-		   Optional 55-150 45 acerrubr
-		   Optional 55-110 45 betupapy
-		   Optional 55-300 45 betualle
-		   Optional 55-150 45 fraxpenn
-		   Optional 55-150 45 fraxnigr
-		   Optional 55-200 45 prunsero
-		   Optional 55-85 45 ulmuamer
-		SiteSelection Complete
-		CohortsRemoved	ClearCut
 
 Prescription	MM7-1_DO1 << Swamp_Hardwoods_Seedtree
 		StandRanking	Economic
@@ -389,20 +338,6 @@ Prescription	MM10-1_DO1 << Swamp_Hardwoods_Patch
 		   prunsero	55-200(20%)
 		   ulmuamer	55-85(20%)
 		   tsugcana	800
-
-Prescription	MM11-1_DO1 << Upland_Spruce_Fir_Clearcut
-		StandRanking  Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   piceglau	100		55
-		   abiebals	100		40
-		MinimumAge	55 
-		ForestTypeTable << spruce fir
-		>> InclusionRule ageRange percentCells species
-		   Optional 55-120 45 piceglau
-		   Optional 55-90 45 abiebals
-		SiteSelection PatchCutting   50%   250
-		CohortsRemoved ClearCut
 				
 Prescription	MM12-1_DO1 << Spruce_Fir_Seedtree
 		StandRanking	Economic
@@ -448,18 +383,6 @@ Prescription	MM12-1_DO1 << Spruce_Fir_Seedtree
 		   tiliamer 	All
 		   ulmuamer	All
 		   tsugcana	800
-
-Prescription	MM13-1_DO1 << Jackpine_Clearcut_no_plant
-		StandRanking	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> -------	-----------	----------
-		   pinubank	100	35
-		MinimumAge	35
-		ForestTypeTable << jack pine
-		>> InclusionRule ageRange percentCells species
-		   Required 35-100 highest pinubank
-		SiteSelection Complete
-		CohortsRemoved ClearCut
 			
 Prescription	MM14-1_DO1 << Jackpine_Clearcut_plant
 		StandRanking	Economic
@@ -572,25 +495,6 @@ Prescription	MM16-1_DO1 << North_Hardwood_Shelterwood
 		   querrubr 	50-250
 		   tiliamer	50-250
 		   tsugcana	800
-
-Prescription	MM17-1_DO1 << Oak_Clearcut_no_plant
-		StandRanking	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> -------	-----------	----------
-		   querrubr	100	50
-		   quermacr 	100	50
-		   queralba	100	50
-		   querelli	100	50
-		MinimumAge	50
-		ForestTypeTable << oak
-		>> InclusionRule ageRange percentCells species
-		   Optional 50-250 45 querrubr
-		   Optional 50-300 45 quermacr
-		   Optional 50-400 45 queralba
-		   Optional 50-200 45	querelli
-		   Optional 50-200 45 quervelu
-		SiteSelection Complete
-		CohortsRemoved ClearCut
 
 Prescription	MM18-1_DO1 << Oak_Clearcut_plant
 		StandRanking	Economic
@@ -803,31 +707,6 @@ Prescription	MM22-1_DO1 << Oak_Patch
 		   quervelu	40-200(15%)
 		   tsugcana	800
 
-Prescription	MM23-1_DO1 << Redpine_Clearcut_no_plant
-		StandRanking 	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   pinuresi	100		35
-		MinimumAge	55
-		ForestTypeTable << red pine
-		>> InclusionRule ageRange percentCells species
-		   Required 55-250 highest pinuresi
-		SiteSelection Complete
-		CohortsRemoved ClearCut
-		
-Prescription	MM24-1_DO1 << Redpine_Clearcut_plant
-		StandRanking 	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   pinuresi	100		35
-		MinimumAge	55
-		ForestTypeTable << red pine
-		>> InclusionRule ageRange percentCells species
-		   Required 55-250 highest pinuresi
-		SiteSelection Complete
-		CohortsRemoved ClearCut
-		Plant pinuresi pinubank
-
 Prescription	MM25-1_DO1 << Redpine_Seedtree
 		StandRanking 	Economic
 		>> Species	EconomicRank	MinimumAge
@@ -982,73 +861,6 @@ Prescription	MM28-1_DO1 << Redpine_Patch
 		   pinustro	50-350(15%)
 		   pinusylv	50-250(15%)
 		   tsugcana	800
-
-Prescription	MM29-1_DO1 << Black_Spruce_Swamp_Clearcut
-		StandRanking 	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   picemari	100		55
-		MinimumAge	55
-		ForestTypeTable << black spruce
-		>> InclusionRule ageRange percentCells species
-		   Required 55-250 highest picemari
-		SiteSelection Complete
-		CohortsRemoved ClearCut
-	
-Prescription	MM30-1_DO1 << Black_Spruce_Swamp_Seedtree
-		StandRanking 	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   picemari	100		55
-		MinimumAge	55
-		ForestTypeTable << black spruce
-		>> InclusionRule ageRange percentCells species
-		   Required 55-250 highest picemari
-		SiteSelection Complete
-		CohortsRemoved SpeciesList
-		>> Species 	Selection
-		>> -------	--------
-		   abiebals	All
-		   acerrubr 	All
-		   acersacc	All
-		   betualle 	All
-		   betupapy	All
-		   carycord	All
-		   fagugran	All
-		   fraxamer	All
-		   fraxnigr	All
-		   fraxpenn	All
-		   piceglau 	All
-		   picemari 	50-215(80%)
-		   pinubank	All
-		   pinuresi	All
-		   pinustro	All
-		   pinusylv	All
-		   popubals	All
-		   popugran	All
-		   poputrem	All
-		   prunsero	All
-		   queralba	All
-		   querelli	All
-		   quermacr 	All
-		   querrubr 	All
-		   quervelu	All
-		   thujocci	All
-		   tiliamer 	All
-		   ulmuamer	All
-		   tsugcana	800
-
-Prescription	MM31-1_DO1 << White_Pine_Clearcut
-		StandRanking 	Economic
-		>> Species	EconomicRank	MinimumAge
-		>> ------	------------	-----------
-		   pinustro	100		55
-		MinimumAge	55
-		ForestTypeTable << white pine
-		>> InclusionRule ageRange percentCells species
-		   Required 55-350 highest pinustro
-		SiteSelection Complete
-		CohortsRemoved ClearCut
 	
 Prescription	MM32-1_DO1 << White_Pine_Seedtree
 		StandRanking 	Economic
@@ -1206,7 +1018,6 @@ Prescription 	MM35-1_DO1 << White_Pine_Patch
    HarvestImplementations
 >> ----------------------
 
->> Notes: MA 1 is private non-industrial land.
 >> --   ------------    --------     -----      ----    --------
 >> MA	Prescription    Target %     Start      Stop	COMMENTS
 >> --   ------------    --------     -----      ----    --------
@@ -1385,10 +1196,59 @@ Prescription 	MM35-1_DO1 << White_Pine_Patch
    7	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
    7	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
 
+   8	MM2-1_DO1	0.02%        0		70   << Aspen_Clearcut_plant
+   8	MM4-1_DO1	0.04%        0		70   << Paperbirch_Seedtree
+   8	MM5-1_DO1	0.01%        0		70   << Paperbirch_Shelterwood
+   8	MM7-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Seedtree
+   8	MM8-1_DO1	0.05%        0		70   << Swamp_Hardwoods_Shelterwood
+   8	MM9-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Thinning
+   8	MM10-1_DO1	0.10%        0		70   << Swamp_Hardwoods_Patch
+   8	MM12-1_DO1	0.10%        0		70   << Spruce_Fir_Seedtree
+   8	MM14-1_DO1	0.12%        0		70   << Jackpine_Clearcut_plant	
+   8	MM15-1_DO1	4.62%        0		70   << Northern_Hardwoods_Patch
+   8	MM16-1_DO1	0.11%        0		70   << North_Hardwood_Shelterwood
+   8	MM18-1_DO1	0.05%        0		70   << Oak_Clearcut_plant
+   8	MM19-1_DO1	0.10%        0		70   << Oak_Seedtree
+   8	MM20-1_DO1	0.42%        0		70   << Oak_Shelterwood
+   8	MM21-1_DO1	1.43%        0		70   << Oak_Thinning
+   8	MM22-1_DO1	1.04%        0		70   << Oak_Patch
+   8	MM25-1_DO1	0.02%        0		70   << Redpine_Seedtree
+   8	MM26-1_DO1	0.04%        0		70   << Redpine_Shelterwood
+   8	MM27-1_DO1	0.52%        0		70   << Redpine_Thinning
+   8	MM28-1_DO1	0.16%        0		70   << Redpine_Patch
+   8	MM32-1_DO1	0.07%        0		70   << White_Pine_Seedtree
+   8	MM33-1_DO1	0.12%        0		70   << White_Pine_Shelterwood
+   8	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
+   8	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
+
+   9	MM2-1_DO1	0.02%        0		70   << Aspen_Clearcut_plant
+   9	MM4-1_DO1	0.04%        0		70   << Paperbirch_Seedtree
+   9	MM5-1_DO1	0.01%        0		70   << Paperbirch_Shelterwood
+   9	MM7-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Seedtree
+   9	MM8-1_DO1	0.05%        0		70   << Swamp_Hardwoods_Shelterwood
+   9	MM9-1_DO1	0.02%        0		70   << Swamp_Hardwoods_Thinning
+   9	MM10-1_DO1	0.10%        0		70   << Swamp_Hardwoods_Patch
+   9	MM12-1_DO1	0.10%        0		70   << Spruce_Fir_Seedtree
+   9	MM14-1_DO1	0.12%        0		70   << Jackpine_Clearcut_plant	
+   9	MM15-1_DO1	4.62%        0		70   << Northern_Hardwoods_Patch
+   9	MM16-1_DO1	0.11%        0		70   << North_Hardwood_Shelterwood
+   9	MM18-1_DO1	0.05%        0		70   << Oak_Clearcut_plant
+   9	MM19-1_DO1	0.10%        0		70   << Oak_Seedtree
+   9	MM20-1_DO1	0.42%        0		70   << Oak_Shelterwood
+   9	MM21-1_DO1	1.43%        0		70   << Oak_Thinning
+   9	MM22-1_DO1	1.04%        0		70   << Oak_Patch
+   9	MM25-1_DO1	0.02%        0		70   << Redpine_Seedtree
+   9	MM26-1_DO1	0.04%        0		70   << Redpine_Shelterwood
+   9	MM27-1_DO1	0.52%        0		70   << Redpine_Thinning
+   9	MM28-1_DO1	0.16%        0		70   << Redpine_Patch
+   9	MM32-1_DO1	0.07%        0		70   << White_Pine_Seedtree
+   9	MM33-1_DO1	0.12%        0		70   << White_Pine_Shelterwood
+   9	MM34-1_DO1	0.31%        0		70   << White_Pine_Thinning
+   9	MM35-1_DO1	0.30%        0		70   << White_Pine_Patch
+
 >> -------
 >> OUTPUTS
 >> -------
-
    PrescriptionMaps	harvest/prescripts-{timestep}.img
    BiomassMaps		harvest/biomass-removed-{timestep}.img
    EventLog		harvest/event-log.csv

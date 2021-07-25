@@ -1,79 +1,288 @@
 >> Name: input_SHE_SOSIEL.txt
 >> Description: The SOSIEL algorithm's main input file for parameterizing agents.
 >> Author: G. Sotnik.
->> Last updated: June 12th, 2021
 
    CognitiveLevel	CL4
 
    GoalAttributes
->> ---------	     ----     		--------                     -----------------             			--------------     ----------     ------------------
->> Agent	     Goal     		Goal                         Reference                     			Change focal       Is             Focal value
->> archetype         name     		tendency                     variable                      			value on prior     cumulative     reference variable
->> ---------	     ----		--------                     -----------------             			--------------     ----------     ------------------
->>   ForestManager	G1_abiebals_1	EqualToOrAboveFocalValue	CurrentAverageAboveGroundSpeciesBiomass_abiebals_1		no		yes		InitialAverageAboveGroundSpeciesBiomass_abiebals_1
->>   ForestManager	G2_acerrubr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_1
->>   ForestManager	G3_acersacc_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_1
->>   ForestManager	G4_betualle_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_1
->>   ForestManager	G5_betupapy_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_1
->>   ForestManager	G6_fagugran_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_1
->>   ForestManager	G7_fraxamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_1
->>   ForestManager	G8_fraxnigr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_1
->>   ForestManager	G9_fraxpenn_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_1
->>   ForestManager	G10_piceglau_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_1
->>   ForestManager	G11_picemari_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_1
->>   ForestManager	G12_pinubank_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_1
->>   ForestManager	G13_pinuresi_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_1
->>   ForestManager	G14_pinustro_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_1
->>   ForestManager	G15_pinusylv_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_1
-
-   ForestManager	G16	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_1
-   ForestManager	G17	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_1
-   ForestManager	G18	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_1
-
->>   ForestManager	G19_prunsero_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_1
->>   ForestManager	G20_queralba_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_1
->>   ForestManager	G21_querelli_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_1
->>   ForestManager	G22_querrubr_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_1
->>   ForestManager	G23_quervelu_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_1
->>   ForestManager	G24_thujocci_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_1
->>   ForestManager	G25_tiliamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_1
->>   ForestManager	G26_tsugcana_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_1
->>   ForestManager	G27_ulmuamer_1	EqualToOrAboveFocalValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_1   no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_1
+>> ---------	     ----    --------            ---------              			        --------------     ----------     ------------------
+>> Agent	     Goal    Goal                Reference                     			        Change focal       Is             Focal value
+>> archetype         name    tendency            variable                      			        value on prior     cumulative     reference variable
+>> ---------	     ----    --------            ---------               			        --------------     ----------     ------------------
+   ForestManager     G1      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_1     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_1
+   ForestManager     G2      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_1
+   ForestManager     G3      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_1
+   ForestManager     G4      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_1
+   ForestManager     G5      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_1
+   ForestManager     G6      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_1
+   ForestManager     G7      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_1
+   ForestManager     G8      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_1
+   ForestManager     G9      MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_1
+   ForestManager     G10     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_1
+   ForestManager     G11     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_1
+   ForestManager     G12     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_1
+   ForestManager     G13     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_1
+   ForestManager     G14     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_1
+   ForestManager     G15     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_1
+   ForestManager     G16     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_1
+   ForestManager     G17     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_1
+   ForestManager     G18     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_1
+   ForestManager     G19     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_1
+   ForestManager     G20     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_1
+   ForestManager     G21     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_1
+   ForestManager     G22     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_1
+   ForestManager     G23     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_1
+   ForestManager     G24     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_1
+   ForestManager     G25     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_1
+   ForestManager     G26     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_1
+   ForestManager     G27     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_1     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_1
+   ForestManager     G28     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_2     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_2
+   ForestManager     G29     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_2
+   ForestManager     G30     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_2
+   ForestManager     G31     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_2
+   ForestManager     G32     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_2
+   ForestManager     G33     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_2
+   ForestManager     G34     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_2
+   ForestManager     G35     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_2
+   ForestManager     G36     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_2
+   ForestManager     G37     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_2
+   ForestManager     G38     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_2
+   ForestManager     G39     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_2
+   ForestManager     G40     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_2
+   ForestManager     G41     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_2
+   ForestManager     G42     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_2
+   ForestManager     G43     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_2
+   ForestManager     G44     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_2
+   ForestManager     G45     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_2
+   ForestManager     G46     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_2
+   ForestManager     G47     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_2
+   ForestManager     G48     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_2
+   ForestManager     G49     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_2
+   ForestManager     G50     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_2
+   ForestManager     G51     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_2
+   ForestManager     G52     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_2
+   ForestManager     G53     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_2
+   ForestManager     G54     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_2     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_2
+   ForestManager     G55     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_3     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_3
+   ForestManager     G56     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_3
+   ForestManager     G57     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_3
+   ForestManager     G58     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_3
+   ForestManager     G59     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_3
+   ForestManager     G60     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_3
+   ForestManager     G61     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_3
+   ForestManager     G62     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_3
+   ForestManager     G63     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_3
+   ForestManager     G64     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_3
+   ForestManager     G65     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_3
+   ForestManager     G66     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_3
+   ForestManager     G67     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_3
+   ForestManager     G68     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_3
+   ForestManager     G69     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_3
+   ForestManager     G70     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_3
+   ForestManager     G71     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_3
+   ForestManager     G72     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_3
+   ForestManager     G73     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_3
+   ForestManager     G74     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_3
+   ForestManager     G75     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_3
+   ForestManager     G76     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_3
+   ForestManager     G77     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_3
+   ForestManager     G78     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_3
+   ForestManager     G79     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_3
+   ForestManager     G80     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_3
+   ForestManager     G81     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_3     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_3
+   ForestManager     G82     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_4     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_4
+   ForestManager     G83     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_4
+   ForestManager     G84     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_4
+   ForestManager     G85     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_4
+   ForestManager     G86     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_4
+   ForestManager     G87     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_4
+   ForestManager     G88     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_4
+   ForestManager     G89     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_4
+   ForestManager     G90     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_4
+   ForestManager     G91     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_4
+   ForestManager     G92     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_4
+   ForestManager     G93     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_4
+   ForestManager     G94     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_4
+   ForestManager     G95     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_4
+   ForestManager     G96     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_4
+   ForestManager     G97     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_4
+   ForestManager     G98     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_4
+   ForestManager     G99     MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_4
+   ForestManager     G100    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_4
+   ForestManager     G101    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_4
+   ForestManager     G102    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_4
+   ForestManager     G103    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_4
+   ForestManager     G104    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_4
+   ForestManager     G105    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_4
+   ForestManager     G106    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_4
+   ForestManager     G107    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_4
+   ForestManager     G108    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_4     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_4
+   ForestManager     G109    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_5     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_5
+   ForestManager     G110    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_5
+   ForestManager     G111    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_5
+   ForestManager     G112    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_5
+   ForestManager     G113    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_5
+   ForestManager     G114    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_5
+   ForestManager     G115    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_5
+   ForestManager     G116    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_5
+   ForestManager     G117    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_5
+   ForestManager     G118    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_5
+   ForestManager     G119    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_5
+   ForestManager     G120    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_5
+   ForestManager     G121    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_5
+   ForestManager     G122    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_5
+   ForestManager     G123    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_5
+   ForestManager     G124    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_5
+   ForestManager     G125    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_5
+   ForestManager     G126    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_5
+   ForestManager     G127    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_5
+   ForestManager     G228    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_5
+   ForestManager     G229    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_5
+   ForestManager     G230    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_5
+   ForestManager     G231    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_5
+   ForestManager     G232    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_5
+   ForestManager     G233    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_5
+   ForestManager     G234    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_5
+   ForestManager     G235    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_5     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_5
+   ForestManager     G236    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_6     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_6
+   ForestManager     G237    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_6
+   ForestManager     G238    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_6
+   ForestManager     G239    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_6
+   ForestManager     G240    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_6
+   ForestManager     G241    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_6
+   ForestManager     G242    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_6
+   ForestManager     G243    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_6
+   ForestManager     G244    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_6
+   ForestManager     G245    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_6
+   ForestManager     G246    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_6
+   ForestManager     G247    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_6
+   ForestManager     G248    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_6
+   ForestManager     G249    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_6
+   ForestManager     G250    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_6
+   ForestManager     G251    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_6
+   ForestManager     G252    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_6
+   ForestManager     G253    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_6
+   ForestManager     G254    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_6
+   ForestManager     G255    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_6
+   ForestManager     G256    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_6
+   ForestManager     G257    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_6
+   ForestManager     G258    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_6
+   ForestManager     G259    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_6
+   ForestManager     G260    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_6
+   ForestManager     G261    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_6
+   ForestManager     G262    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_6     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_6
+   ForestManager     G263    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_7     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_7
+   ForestManager     G264    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_7
+   ForestManager     G265    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_7
+   ForestManager     G266    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_7
+   ForestManager     G267    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_7
+   ForestManager     G268    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_7
+   ForestManager     G269    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_7
+   ForestManager     G270    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_7
+   ForestManager     G271    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_7
+   ForestManager     G272    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_7
+   ForestManager     G273    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_7
+   ForestManager     G274    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_7
+   ForestManager     G275    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_7
+   ForestManager     G276    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_7
+   ForestManager     G277    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_7
+   ForestManager     G278    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_7
+   ForestManager     G279    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_7
+   ForestManager     G280    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_7
+   ForestManager     G281    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_7
+   ForestManager     G282    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_7
+   ForestManager     G283    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_7
+   ForestManager     G284    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_7
+   ForestManager     G285    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_7
+   ForestManager     G286    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_7
+   ForestManager     G287    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_7
+   ForestManager     G288    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_7
+   ForestManager     G289    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_7     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_7
+   ForestManager     G290    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_8     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_8
+   ForestManager     G291    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_8
+   ForestManager     G292    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_8
+   ForestManager     G293    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_8
+   ForestManager     G294    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_8
+   ForestManager     G295    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_8
+   ForestManager     G296    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_8
+   ForestManager     G297    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_8
+   ForestManager     G298    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_8
+   ForestManager     G299    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_8
+   ForestManager     G300    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_8
+   ForestManager     G301    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_8
+   ForestManager     G302    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_8
+   ForestManager     G303    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_8
+   ForestManager     G304    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_8
+   ForestManager     G305    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_8
+   ForestManager     G306    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_8
+   ForestManager     G307    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_8
+   ForestManager     G308    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_8
+   ForestManager     G309    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_8
+   ForestManager     G310    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_8
+   ForestManager     G311    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_8
+   ForestManager     G312    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_8
+   ForestManager     G313    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_8
+   ForestManager     G314    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_8
+   ForestManager     G315    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_8
+   ForestManager     G316    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_8     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_8
+   ForestManager     G317    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_abiebals_9     no                 yes            InitialAverageAboveGroundSpeciesBiomass_abiebals_9
+   ForestManager     G318    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acerrubr_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acerrubr_9
+   ForestManager     G319    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_acersacc_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_acersacc_9
+   ForestManager     G320    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betualle_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betualle_9
+   ForestManager     G321    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_betupapy_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_betupapy_9
+   ForestManager     G322    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fagugran_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fagugran_9
+   ForestManager     G323    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxamer_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxamer_9
+   ForestManager     G324    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxnigr_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxnigr_9
+   ForestManager     G325    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_fraxpenn_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_fraxpenn_9
+   ForestManager     G326    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_piceglau_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_piceglau_9
+   ForestManager     G327    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_picemari_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_picemari_9
+   ForestManager     G328    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinubank_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinubank_9
+   ForestManager     G329    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinuresi_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinuresi_9
+   ForestManager     G330    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinustro_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinustro_9
+   ForestManager     G331    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_pinusylv_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_pinusylv_9
+   ForestManager     G332    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popubals_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popubals_9
+   ForestManager     G333    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_popugran_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_popugran_9
+   ForestManager     G334    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_poputrem_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_poputrem_9
+   ForestManager     G335    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_prunsero_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_prunsero_9
+   ForestManager     G336    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_queralba_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_queralba_9
+   ForestManager     G337    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querelli_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querelli_9
+   ForestManager     G338    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_querrubr_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_querrubr_9
+   ForestManager     G339    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_quervelu_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_quervelu_9
+   ForestManager     G340    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_thujocci_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_thujocci_9
+   ForestManager     G341    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tiliamer_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tiliamer_9
+   ForestManager     G342    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_tsugcana_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_tsugcana_9
+   ForestManager     G343    MaintainAtValue     CurrentAverageAboveGroundSpeciesBiomass_ulmuamer_9     no		   yes            InitialAverageAboveGroundSpeciesBiomass_ulmuamer_9
 
    MentalModelAttributes
->> ------------------------------------------------------------------------------------------------------------------------------------
->> Archetype		Mental		Modifiable		Max #					DO goal relationship	   Assosiated		Consequent	Consequent     		 
->> name				model						of DOs (required if									with			value		value
->> 												MM is modifiable)										goals		range		rounding 
->> ------------------------------------------------------------------------------------------------------------------------------------
-   ForestManager	MM2-1		yes				5						G16_popubals_1<->;G17_popugran_1<->;G18_poputrem_1<->	G16_popubals_1;G17_popugran_1;G18_poputrem_1		0.0001-100.00	4
->>   ForestManager	MM4-1		yes				5	   					G2_acerrubr_1<->										G2_acerrubr_1										0.0001-100.00	4
->>   ForestManager	MM5-1		yes				5	   					G3_acersacc_1<->										G3_acersacc_1										0.0001-100.00	4
->>   ForestManager	MM7-1		yes				5	   					G4_betualle_1<->	   G4_betualle_1	0.0001-100.00	4
->>   ForestManager	MM8-1		yes				5	   					G5_betupapy_1<->	   G5_betupapy_1	0.0001-100.00	4
->>   ForestManager	MM9-1		yes				5	   					G6_fagugran_1<->	   G6_fagugran_1	0.0001-100.00	4
->>   ForestManager	MM10-1		yes				5	   					G7_fraxamer_1<->	   G7_fraxamer_1	0.0001-100.00	4
->>   ForestManager	MM12-1		yes				5	   					G8_fraxnigr_1<->	   G8_fraxnigr_1	0.0001-100.00	4
->>   ForestManager	MM14-1		yes				5	   					G9_fraxpenn_1<->	   G9_fraxpenn_1	0.0001-100.00	4
->>   ForestManager	MM15-1		yes				5	   					G10_piceglau_1<->	   G10_piceglau_1	0.0001-100.00	4
->>   ForestManager	MM16-1		yes				5	   					G11_picemari_1<->	   G11_picemari_1	0.0001-100.00	4
->>   ForestManager	MM18-1		yes				5	   					G12_pinubank_1<->	   G12_pinubank_1	0.0001-100.00	4
->>   ForestManager	MM19-1		yes				5	   					G13_pinuresi_1<->	   G13_pinuresi_1	0.0001-100.00	4
->>   ForestManager	MM20-1		yes				5	   					G14_pinustro_1<->	   G14_pinustro_1	0.0001-100.00	4
->>   ForestManager	MM21-1		yes				5	   					G15_pinusylv_1<->	   G15_pinusylv_1	0.0001-100.00	4
->>   ForestManager	MM22-1		yes				5	   					G16_popubals_1<->	   G16_popubals_1	0.0001-100.00	4
->>   ForestManager	MM25-1		yes				5	   					G17_popugran_1<->	   G17_popugran_1	0.0001-100.00	4
->>   ForestManager	MM26-1		yes				5	   					G18_poputrem_1<->	   G8_poputrem_1	0.0001-100.00	4
->>   ForestManager	MM27-1		yes				5	   					G19_prunsero_1<->	   G19_prunsero_1	0.0001-100.00	4
->>   ForestManager	MM28-1		yes				5	   					G20_queralba_1<->	   G20_queralba_1	0.0001-100.00	4
->>   ForestManager	MM32-1		yes				5	   					G21_querelli_1<->	   G21_querelli_1	0.0001-100.00	4
->>   ForestManager	MM33-1		yes				5	   					G22_querrubr_1<->	   G22_querrubr_1	0.0001-100.00	4
->>   ForestManager	MM34-1		yes				5	   					G23_quervelu_1<->	   G23_quervelu_1	0.0001-100.00	4
->>   ForestManager	MM35-1		yes				5	   					G24_thujocci_1<->	   G24_thujocci_1	0.0001-100.00	4
->>   ForestManager	MM33-1		yes				5	   					G25_tiliamer_1<->	   G25_tiliamer_1	0.0001-100.00	4
->>   ForestManager	MM34-1		yes				5	   					G26_tsugcana_1<->	   G26_tsugcana_1	0.0001-100.00	4
->>   ForestManager	MM35-1		yes				5	   					G27_tulmuamer_1<->	   G27_tulmuamer_1	0.0001-100.00	4
-
+>> ---------------------------------------------------------------------------------------------------------------
+>> Archetype	     Mental     Modi-	Max #	   DO goal rel.		Assosiated	Consequent	Consequent     		 
+>> name		     model	fiable	of DOs	   (required if		with		value		value
+>> 						   MM is modifiable)	goals		range		rounding 
+>> ---------------------------------------------------------------------------------------------------------------
+   ForestManager     MM2-1      yes     5          G16<->, G17<->, G18<->, G43<->, G44<->, G45<->, G70<->, G71<->, G72<->, G97<->, G98<->, G99<->, G124<->, G125<->, G126<->, G251<->, G252<->, G253<->, G278<->, G279<->, G280<->, G305<->, G306<->, G307<->, G332<->, G333<->, G334<->     G16, G17, G18, G43, G44, G45, G70, G71, G72, G97, G98, G99, G124, G125, G126, G251, G252, G253, G278, G279, G280, G305, G306, G307, G332, G333, G334     0.0001-100.00     4
+   ForestManager     MM4-1	yes     5          G5<->, G32<->, G59<->, G86<->, G113<->, G240<->, G267<->, G294<->, G321<->     G5, G32, G59, G86, G113, G240, G267, G294, G321     0.0001-100.00     4
+   ForestManager     MM5-1	yes     5          G5<->, G32<->, G59<->, G86<->, G113<->, G240<->, G267<->, G294<->, G321<->     G5, G32, G59, G86, G113, G240, G267, G294, G321     0.0001-100.00     4
+   ForestManager     MM7-1	yes     5          G2<->, G4<->, G5<->, G8<->, G9<->, G19<->, G27<->, G29<->, G31<->, G32<->, G35<->, G36<->, G46<->, G54<->, G56<->, G58<->, G59<->, G62<->, G63<->, G73<->, G81<->, G83<->, G85<->, G86<->, G89<->, G90<->, G100<->, G108<->, G110<->, G112<->, G113<->, G116<->, G117<->, G127<->, G235<->, G237<->, G239<->, G240<->, G243<->, G244<->, G254<->, G262<->, G264<->, G266<->, G267<->, G270<->, G271<->, G281<->, G289<->, G291<->, G293<->, G294<->, G297<->, G298<->, G308<->, G316<->, G318<->, G320<->, G321<->, G324<->, G325<->, G343<->, G335<->     G2, G4, G5, G8, G9, G19, G27, G29, G31, G32, G35, G36, G46, G54, G56, G58, G59, G62, G63, G73, G81, G83, G85, G86, G89, G90, G100, G108, G110, G112, G113, G116, G117, G127, G235, G237, G239, G240, G243, G244, G254, G, 262, G264, G266, G267, G270, G271, G281, G289, G291, G293, G294, G297, G298, G308, G316, G318, G320, G321, G324, G325, G343, G335     0.0001-100.00     4
+   ForestManager     MM8-1	yes     5          G2<->, G4<->, G5<->, G8<->, G9<->, G19<->, G27<->, G29<->, G31<->, G32<->, G35<->, G36<->, G46<->, G54<->, G56<->, G58<->, G59<->, G62<->, G63<->, G73<->, G81<->, G83<->, G85<->, G86<->, G89<->, G90<->, G100<->, G108<->, G110<->, G112<->, G113<->, G116<->, G117<->, G127<->, G235<->, G237<->, G239<->, G240<->, G243<->, G244<->, G254<->, G262<->, G264<->, G266<->, G267<->, G270<->, G271<->, G281<->, G289<->, G291<->, G293<->, G294<->, G297<->, G298<->, G308<->, G316<->, G318<->, G320<->, G321<->, G324<->, G325<->, G343<->, G335<->     G2, G4, G5, G8, G9, G19, G27, G29, G31, G32, G35, G36, G46, G54, G56, G58, G59, G62, G63, G73, G81, G83, G85, G86, G89, G90, G100, G108, G110, G112, G113, G116, G117, G127, G235, G237, G239, G240, G243, G244, G254, G, 262, G264, G266, G267, G270, G271, G281, G289, G291, G293, G294, G297, G298, G308, G316, G318, G320, G321, G324, G325, G343, G335     0.0001-100.00     4
+   ForestManager     MM9-1	yes     5          G2<->, G4<->, G5<->, G8<->, G9<->, G19<->, G27<->, G29<->, G31<->, G32<->, G35<->, G36<->, G46<->, G54<->, G56<->, G58<->, G59<->, G62<->, G63<->, G73<->, G81<->, G83<->, G85<->, G86<->, G89<->, G90<->, G100<->, G108<->, G110<->, G112<->, G113<->, G116<->, G117<->, G127<->, G235<->, G237<->, G239<->, G240<->, G243<->, G244<->, G254<->, G262<->, G264<->, G266<->, G267<->, G270<->, G271<->, G281<->, G289<->, G291<->, G293<->, G294<->, G297<->, G298<->, G308<->, G316<->, G318<->, G320<->, G321<->, G324<->, G325<->, G343<->, G335<->     G2, G4, G5, G8, G9, G19, G27, G29, G31, G32, G35, G36, G46, G54, G56, G58, G59, G62, G63, G73, G81, G83, G85, G86, G89, G90, G100, G108, G110, G112, G113, G116, G117, G127, G235, G237, G239, G240, G243, G244, G254, G, 262, G264, G266, G267, G270, G271, G281, G289, G291, G293, G294, G297, G298, G308, G316, G318, G320, G321, G324, G325, G343, G335     0.0001-100.00     4
+   ForestManager     MM10-1	yes     5          G2<->, G4<->, G5<->, G8<->, G9<->, G19<->, G27<->, G29<->, G31<->, G32<->, G35<->, G36<->, G46<->, G54<->, G56<->, G58<->, G59<->, G62<->, G63<->, G73<->, G81<->, G83<->, G85<->, G86<->, G89<->, G90<->, G100<->, G108<->, G110<->, G112<->, G113<->, G116<->, G117<->, G127<->, G235<->, G237<->, G239<->, G240<->, G243<->, G244<->, G254<->, G262<->, G264<->, G266<->, G267<->, G270<->, G271<->, G281<->, G289<->, G291<->, G293<->, G294<->, G297<->, G298<->, G308<->, G316<->, G318<->, G320<->, G321<->, G324<->, G325<->, G343<->, G335<->     G2, G4, G5, G8, G9, G19, G27, G29, G31, G32, G35, G36, G46, G54, G56, G58, G59, G62, G63, G73, G81, G83, G85, G86, G89, G90, G100, G108, G110, G112, G113, G116, G117, G127, G235, G237, G239, G240, G243, G244, G254, G, 262, G264, G266, G267, G270, G271, G281, G289, G291, G293, G294, G297, G298, G308, G316, G318, G320, G321, G324, G325, G343, G335     0.0001-100.00     4
+   ForestManager     MM12-1	yes     5          G1<->, G10<->, G28<->, G37<->, G55<->, G64<->, G82<->, G91<->, G109<->, G118<->, G236<->, G245<->, G263<->, G272<->, G290<->, G299<->, G317<->, G326<->     G1, G10, G28, G37, G55, G64, G82, G91, G109, G118, G236, G245, G263, G272, G290, G299, G317, G326     0.0001-100.00     4
+   ForestManager     MM14-1	yes     5          G12<->, G39<->, G66<->, G93<->, G120<->, G247<->, G274<->, G301<->, G328<->     G12, G39, G66, G93, G120, G247, G274, G301, G328     0.0001-100.00     4
+   ForestManager     MM15-1	yes     5          G3<->, G6<->, G7<->, G19<->, G22<->, G25<->, G30<->, G33<->, G34<->, G46<->, G49<->, G52<->, G57<->, G60<->, G61<->, G73<->, G76<->, G79<->, G84<->, G87<->, G88<->, G100<->, G103<->, G106<->, G111<->, G114<->, G115<->, G127<->, G230<->, G233<->, G238<->, G241<->, G242<->, G254<->, G257<->, G260<->, G265<->, G268<->, G269<->, G281<->, G284<->, G287<->, G292<->, G295<->, G296<->, G308<->, G311<->, G314<->, G319<->, G322<->, G323<->, G335<->, G338<->, G341<->     G3, G6, G7, G19, G22, G25, G30, G33, G34, G46, G49, G52, G57, G60, G61, G73, G76, G79, G84, G87, G88, G100, G103, G106, G111, G114, G115, G127, G230, G233, G238, G241, G242, G254, G257, G260, G265, G268, G269, G281, G284, G287, G292, G295, G296, G308, G311, G314, G319, G322, G323, G335, G338, G341     0.0001-100.00     4
+   ForestManager     MM16-1	yes     5          G3<->, G6<->, G7<->, G19<->, G22<->, G25<->, G30<->, G33<->, G34<->, G46<->, G49<->, G52<->, G57<->, G60<->, G61<->, G73<->, G76<->, G79<->, G84<->, G87<->, G88<->, G100<->, G103<->, G106<->, G111<->, G114<->, G115<->, G127<->, G230<->, G233<->, G238<->, G241<->, G242<->, G254<->, G257<->, G260<->, G265<->, G268<->, G269<->, G281<->, G284<->, G287<->, G292<->, G295<->, G296<->, G308<->, G311<->, G314<->, G319<->, G322<->, G323<->, G335<->, G338<->, G341<->     G3, G6, G7, G19, G22, G25, G30, G33, G34, G46, G49, G52, G57, G60, G61, G73, G76, G79, G84, G87, G88, G100, G103, G106, G111, G114, G115, G127, G230, G233, G238, G241, G242, G254, G257, G260, G265, G268, G269, G281, G284, G287, G292, G295, G296, G308, G311, G314, G319, G322, G323, G335, G338, G341     0.0001-100.00     4
+   ForestManager     MM18-1	yes     5          G20<->, G21<->, G22<->, G47<->, G48<->, G49<->, G74<->, G75<->, G76<->, G101<->, G102<->, G103<->, G228<->, G229<->, G230<->, G255<->, G256<->, G257<->, G282<->, G283<->, G284<->, G309<->, G310<->, G311<->, G336<->, G337<->, G338<->     G20, G21, G22, G47, G48, G49, G74, G75, G76, G101, G102, G103, G228, G229, G230, G255, G256, G257, G282, G283, G284, G309, G310, G311, G336, G337, G338     0.0001-100.00     4
+   ForestManager     MM19-1	yes     5          G20<->, G21<->, G22<->, G47<->, G48<->, G49<->, G74<->, G75<->, G76<->, G101<->, G102<->, G103<->, G228<->, G229<->, G230<->, G255<->, G256<->, G257<->, G282<->, G283<->, G284<->, G309<->, G310<->, G311<->, G336<->, G337<->, G338<->     G20, G21, G22, G47, G48, G49, G74, G75, G76, G101, G102, G103, G228, G229, G230, G255, G256, G257, G282, G283, G284, G309, G310, G311, G336, G337, G338     0.0001-100.00     4
+   ForestManager     MM20-1	yes     5          G20<->, G21<->, G22<->, G23<->, G47<->, G48<->, G49<->, G50<->, G74<->, G75<->, G76<->, G77<->, G101<->, G102<->, G103<->, G104<->, G228<->, G229<->, G230<->, G231<->, G255<->, G256<->, G257<->, G258<->, G282<->, G283<->, G284<->, G285<->, G309<->, G310<->, G311<->, G312<->, G336<->, G337<->, G338<->, G339<->     G20, G21, G22, G33, G47, G48, G49, G50, G74, G75, G76, G77, G101, G102, G103, G104, G228, G229, G230, G231, G255, G256, G257, G258, G282, G283, G284, G285, G309, G310, G311, G312, G336, G337, G338, G339     0.0001-100.00     4
+   ForestManager     MM21-1	yes     5          G20<->, G21<->, G22<->, G23<->, G47<->, G48<->, G49<->, G50<->, G74<->, G75<->, G76<->, G77<->, G101<->, G102<->, G103<->, G104<->, G228<->, G229<->, G230<->, G231<->, G255<->, G256<->, G257<->, G258<->, G282<->, G283<->, G284<->, G285<->, G309<->, G310<->, G311<->, G312<->, G336<->, G337<->, G338<->, G339<->     G20, G21, G22, G33, G47, G48, G49, G50, G74, G75, G76, G77, G101, G102, G103, G104, G228, G229, G230, G231, G255, G256, G257, G258, G282, G283, G284, G285, G309, G310, G311, G312, G336, G337, G338, G339     0.0001-100.00     4
+   ForestManager     MM22-1	yes     5          G20<->, G21<->, G22<->, G23<->, G47<->, G48<->, G49<->, G50<->, G74<->, G75<->, G76<->, G77<->, G101<->, G102<->, G103<->, G104<->, G228<->, G229<->, G230<->, G231<->, G255<->, G256<->, G257<->, G258<->, G282<->, G283<->, G284<->, G285<->, G309<->, G310<->, G311<->, G312<->, G336<->, G337<->, G338<->, G339<->     G20, G21, G22, G33, G47, G48, G49, G50, G74, G75, G76, G77, G101, G102, G103, G104, G228, G229, G230, G231, G255, G256, G257, G258, G282, G283, G284, G285, G309, G310, G311, G312, G336, G337, G338, G339     0.0001-100.00     4
+   ForestManager     MM25-1	yes     5          G13<->, G40<->, G67<->, G94<->, G121<->, G248<->, G275<->, G302<->, G329<->     G13, G40, G67, G94, G121, G248, G275, G302, G329     0.0001-100.00     4
+   ForestManager     MM26-1	yes     5          G13<->, G40<->, G67<->, G94<->, G121<->, G248<->, G275<->, G302<->, G329<->     G13, G40, G67, G94, G121, G248, G275, G302, G329     0.0001-100.00     4
+   ForestManager     MM27-1	yes     5          G13<->, G40<->, G67<->, G94<->, G121<->, G248<->, G275<->, G302<->, G329<->     G13, G40, G67, G94, G121, G248, G275, G302, G329     0.0001-100.00     4
+   ForestManager     MM28-1	yes     5          G13<->, G40<->, G67<->, G94<->, G121<->, G248<->, G275<->, G302<->, G329<->     G13, G40, G67, G94, G121, G248, G275, G302, G329     0.0001-100.00     4
+   ForestManager     MM32-1	yes     5          G14<->, G41<->, G68<->, G95<->, G122<->, G249<->, G276<->, G302<->, G330<->     G14, G41, G68, G95, G122, G249, G276, G302, G330     0.0001-100.00     4
+   ForestManager     MM33-1	yes     5          G14<->, G41<->, G68<->, G95<->, G122<->, G249<->, G276<->, G302<->, G330<->     G14, G41, G68, G95, G122, G249, G276, G302, G330     0.0001-100.00     4
+   ForestManager     MM34-1	yes     5          G14<->, G41<->, G68<->, G95<->, G122<->, G249<->, G276<->, G302<->, G330<->     G14, G41, G68, G95, G122, G249, G276, G302, G330     0.0001-100.00     4
+   ForestManager     MM35-1	yes     5          G14<->, G41<->, G68<->, G95<->, G122<->, G249<->, G276<->, G302<->, G330<->     G14, G41, G68, G95, G122, G249, G276, G302, G330     0.0001-100.00     4
 
    DecisionOptionAttributes               input_SHE_SOSIEL_DOAttributes.csv
 
@@ -102,10 +311,10 @@
    DemographicAttributes             input_SHE_SOSIEL_DemographicAttributes.csv
 
    ProbabilityAttributes
->> ----------     --------     ----		                          ------------
->> Variable       Variable     File 			                  Ignore first
+>> ----------     --------     ----		                          ----------
+>> Variable       Variable     File 			                  Ignore 1st
 >> parameter      type	       name			                  line
->> ----------     --------     ----			                  ------------
+>> ----------     --------     ----			                  ----------
    Birth          Integer      input_SHE_SOSIEL_Probability_birth.csv     yes
    Death          Integer      input_SHE_SOSIEL_Probability_death.csv     yes
    General        Integer      input_SHE_SOSIEL_Probability_general.csv   yes

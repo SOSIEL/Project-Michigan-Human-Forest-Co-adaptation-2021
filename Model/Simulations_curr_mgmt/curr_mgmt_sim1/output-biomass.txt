@@ -5,8 +5,7 @@ Timestep  5
 
 MakeTable yes  << Optional parameter
 
-Species
-abiebals
+Species   abiebals
 acerrubr
 acersacc
 betualle

@@ -1,7 +1,6 @@
 >> Name: input_SHE
->> Description: The SOSIEL Harvest Extension's main input file.
->> Author: G. Sotnik.
->> Last updated: May 27th, 2021
+>> Description: The SOSIEL Harvest Extension's (SHE's) main input file.
+>> Author: G. Sotnik
 
    LandisData  "SOSIEL Harvest"
 
@@ -23,11 +22,11 @@
 >> Agent             MA     Site selection     Simulation mode
 >> -----             --     --------------     ---------------
    ForestManager01   1      RandomWalk         2
->>   ForestManager02   2      RandomWalk         2
->>   ForestManager03   3      RandomWalk         2
->>   ForestManager04   4      RandomWalk         2
->>   ForestManager05   5      RandomWalk         2
->>   ForestManager06   6      RandomWalk         2
->>   ForestManager07   7      RandomWalk         2
->>   ForestManager08   8      RandomWalk         2
->>   ForestManager09   9      RandomWalk         2
+   ForestManager02   2      RandomWalk         2
+   ForestManager03   3      RandomWalk         2
+   ForestManager04   4      RandomWalk         2
+   ForestManager05   5      RandomWalk         2
+   ForestManager06   6      RandomWalk         2
+   ForestManager07   7      RandomWalk         2
+   ForestManager08   8      RandomWalk         2
+   ForestManager09   9      RandomWalk         2
