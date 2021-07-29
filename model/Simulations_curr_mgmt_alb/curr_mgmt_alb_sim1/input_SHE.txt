@@ -1,0 +1,32 @@
+>> Name: input_SHE
+>> Description: The SOSIEL Harvest Extension's (SHE's) main input file.
+>> Author: G. Sotnik
+
+   LandisData  "SOSIEL Harvest"
+
+   Mode	       2
+
+   GenerateSpeciesBiomassForManagementAreas all
+
+   Timestep    5
+
+>> ---------            ---------
+>> Extension            Extension
+>> name                 file
+>> ---------            ---------
+   "SOSIEL Harvest"	input_SHE_SOSIEL.txt
+   "Biomass Harvest"	input_SHE_BHE.txt     << MI_BAU_harvest_2013.txt
+
+   AgentToManagementArea
+>> -----             --     --------------     ---------------
+>> Agent             MA     Site selection     Simulation mode
+>> -----             --     --------------     ---------------
+   ForestManager01   1      RandomWalk         2
+   ForestManager02   2      RandomWalk         2
+   ForestManager03   3      RandomWalk         2
+   ForestManager04   4      RandomWalk         2
+   ForestManager05   5      RandomWalk         2
+   ForestManager06   6      RandomWalk         2
+   ForestManager07   7      RandomWalk         2
+   ForestManager08   8      RandomWalk         2
+   ForestManager09   9      RandomWalk         2

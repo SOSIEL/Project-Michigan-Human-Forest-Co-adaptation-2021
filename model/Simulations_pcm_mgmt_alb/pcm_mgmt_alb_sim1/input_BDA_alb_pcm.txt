@@ -1,0 +1,152 @@
+LandisData "BDA Agent"
+
+BDAAgentName	AsianLonghornedBeetle 								
+BDPCalibrator	2	 							
+SRDMode	mean								
+
+>> -------- Regional Outbreak Inputs -------------
+   OutbreakPattern		CyclicNormal	<< CyclicNormal or CyclicUniform
+   Mean				4		<< years
+   StDev			0		<< years
+   TimeSinceLastEpidemic	4		<< In years, based on ALB phenology.
+   TemporalType			pulse	        << pulse or variablepulse
+   MinROS			0
+   MaxROS			3
+									
+>> -------- Dispersal Inputs ----------------------									
+   Dispersal			yes		<< yes or no							
+   DispersalRate		840		<< meters/year 30000x30000 m in approx 20 years 							
+   EpidemicThresh		0.0001		<<						
+   InitialEpicenterNum		2		<<							
+   OutbreakEpicenterCoeff	0.1		<< 
+   OutbreakEpicenterThresh 	0.0							
+   SeedEpicenter		no		<< yes or no							
+   SeedEpicenterCoeff		0.5								
+   DispersalTemplate		MaxRadius	<< MaxRadius, 4N,8N, 12N, or 24N"							
+				 					
+									
+>> Neighborhood Resource Inputs 									
+   NeighborFlag			no		<< yes or no							
+   NeighborSpeedUp		none		<< none, 2x, 3x, or 4x"							
+   NeighborRadius		1		<< meters							
+   NeighborShape		uniform		<< uniform, linear, or gaussian"							
+   NeighborWeight		1								
+			
+>> --------
+   IntensityClass2_BDP		0.25
+   IntensityClass3_BDP		0.5
+
+>> -------------------
+>> Ecoregion Modifiers
+>> -------------------
+>> Ecoregion     Value
+>> -------------------  	
+   Eco1036	-0.07
+   Eco1064	-0.07
+   Eco1072	-0.07
+   Eco1078	-0.07
+   Eco1083	-0.07
+   Eco1090	-0.07
+   Eco1102	-0.07
+   Eco1133	-0.07
+   Eco1226	-0.07
+   Eco1441	-0.07
+   Eco2036	 0.02
+   Eco2064	 0.02
+   Eco2072	 0.02
+   Eco2078	 0.02
+   Eco2083	 0.02
+   Eco2090	 0.02
+   Eco2102	 0.02
+   Eco2133	 0.02
+   Eco2226	 0.02
+   Eco2441	 0.02
+   Eco3036	-0.13
+   Eco3064	-0.13
+   Eco3072	-0.13
+   Eco3078	-0.13
+   Eco3083	-0.13
+   Eco3090	-0.13
+   Eco3102	-0.13
+   Eco3133	-0.13
+   Eco3226	-0.13
+   Eco3441	-0.13
+   Eco4036	 0.04
+   Eco4064	 0.04
+   Eco4072	 0.04
+   Eco4078	 0.04
+   Eco4083	 0.04
+   Eco4090	 0.04
+   Eco4102	 0.04
+   Eco4133	 0.04
+   Eco4226	 0.04
+   Eco4441	 0.04
+   Eco5036	-0.13
+   Eco5064	-0.13
+   Eco5072	-0.13
+   Eco5078	-0.13
+   Eco5083	-0.13
+   Eco5090	-0.13
+   Eco5102	-0.13
+   Eco5133	-0.13
+   Eco5226	-0.13
+   Eco5441	-0.13
+   Eco6036	 0.04
+   Eco6064	 0.04
+   Eco6072	 0.04
+   Eco6078	 0.04
+   Eco6083	 0.04
+   Eco6090	 0.04
+   Eco6102	 0.04
+   Eco6133	 0.04
+   Eco6226	 0.04
+   Eco6441	 0.04
+   Eco7036	 0.02
+   Eco7064	 0.02
+   Eco7072	 0.02
+   Eco7078	 0.02
+   Eco7083	 0.02
+   Eco7090	 0.02
+   Eco7102	 0.02
+   Eco7133	 0.02
+   Eco7226	 0.02
+   Eco7441	 0.02
+   Eco8036	 0.04
+   Eco8064	 0.04
+   Eco8072	 0.04
+   Eco8078	 0.04
+   Eco8083	 0.04
+   Eco8090	 0.04
+   Eco8102	 0.04
+   Eco8133	 0.04
+   Eco8226	 0.04
+   Eco8441	 0.04
+   Eco9036	 0.09
+   Eco9064	 0.09
+   Eco9072	 0.09
+   Eco9078	 0.09
+   Eco9083	 0.09
+   Eco9090	 0.09
+   Eco9102	 0.09
+   Eco9133	 0.09
+   Eco9226	 0.09
+   Eco9441	 0.09
+						
+   BDASpeciesParameters
+>>                                                 | Susceptibility  			      | Special
+>> Species   MinorHost    2ndHost      MajorHost   | Class3        Class2        Class1       | Dead
+>> Name      Age SRDProb  Age SRDProb  Age SRDProb | Age MortProb  Age MortProb  Age MortProb | Fuel?
+>> -------------------------------------------------------------------------------------------------
+   acerrubr  15   0.36 	  30   1.00    40   1.0      15   0.36 	   30   1.00     40   1.0       no  << Red maple; Primary host in forest
+   acersacc  40   0.36 	  80   1.00    120  1.0      40   0.36 	   80   1.00     120  1.0       no  << Sugar maple; Primary host	  
+   betualle  50   0.18 	  110  0.65    140  1.0      50   0.18 	   110  0.65     140  1.0       no  << Swamp birch; Minor host
+   betupapy  20   0.18 	  40   0.65    80   1.0      20   0.18 	   40   0.65     80   1.0       no  << Paper birch; Minor host	  
+   fagugran  80   0.18	  150  0.65    175  1.0      80   0.18	   150  0.65     175  1.0       no  << American beech; Minor host
+   fraxamer  25   0.18	  45   0.65    60   1.0      25   0.18	   45   0.65     60   1.0       no  << White ash; Minor host
+   fraxnigr  35   0.18	  70   0.65    90   1.0      35   0.18	   70   0.65     90   1.0       no  << Black ash; Minor host
+   fraxpenn  50   0.18	  105  0.65    135  1.0      50   0.18	   105  0.65     135  1.0       no  << Green ash; Minor host
+   popubals  15   0.18	  30   0.65    40   1.0      15   0.18	   30   0.65     40   1.0       no  << Balsam poplar; Minor host
+   popugran  30   0.18	  60   0.65    999  1.0      30   0.18	   60   0.65     999  1.0       no  << Bigtooth aspen; Minor host
+   poputrem  20   0.18	  40   0.65    999  1.0      20   0.18	   40   0.65     999  1.0       no  << Quaking aspen; Minor host
+   prunsero  20   0.18	  55   0.65    70   1.0      20   0.18	   55   0.65     70   1.0       no  << Black cherry; Minor host
+   ulmuamer  15   0.18	  30   0.65    40   1.0      15   0.18	   30   0.65     40   1.0       no  << American elm; Minor host

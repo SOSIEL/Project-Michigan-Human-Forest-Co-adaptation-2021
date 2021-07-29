@@ -1,30 +1,33 @@
-LandisData  Scenario
-Duration  71
+>> Name: input_Scenario_gfdl_mgmt.txt
 
-Species         MI_species_6_14_2013.txt
-Ecoregions      MI_Ecoregions.txt
-EcoregionsMap   MI_eco_5_1_2013A.img
+   LandisData			Scenario
+   Duration			71
 
-CellLength  142 << meters
+   Species			input_Scenario_species.txt
+   Ecoregions			input_Scenario_ecoregions.txt
+   EcoregionsMap		input_Scenario_Map_ecoregions.img	<< MI_eco_5_1_2013A.img
 
->> Succession Extension        Initialization File
->> --------------------	       -------------------
-   "Biomass Succession"        input_BSE_gfdl.txt
+   CellLength			142	<< meters
 
->> Disturbance Extensions      Initialization File
->> ----------------------      -------------------
-  "Base Wind"		       input_Wind.txt
-  "Biomass Harvest"   	       input_SHE_BHE.txt
+>> Succession Extension         Initialization File
+>> --------------------	        -------------------
+   "Biomass Succession"		input_BSE_gfdl.txt
+
+>> Disturbance Extensions       Initialization File
+>> ----------------------       -------------------
+   "Base Wind"			input_Wind.txt
+>>   "Biomass Harvest"		input_SHE_BHE.txt
+   "SOSIEL Harvest"		input_SHE.txt
 
 >> DisturbancesRandomOrder  yes  << optional parameter; default = no
 
->> Other Extensions            Initialization File
->> ----------------            -------------------
->> "Max Species Age"	       output-max-spp-age.txt
-   "Output Biomass"    	       output-biomass.txt
->> "Output Biomass Reclass"    output_reclass-biomass-output.txt
-   "Output Cohort Statistics"  cohort-stats.output.txt
-   "Output Max Species Age"    max-spp-age.output.txt
+>> Other Extensions             Initialization File
+>> ----------------             -------------------
+>>   "Max Species Age"	          output-max-spp-age.txt
+   "Output Biomass"		output-biomass.txt
+>>   "Output Biomass Reclass"     output_reclass-biomass-output.txt
+>>   "Output Cohort Statistics"   cohort-stats.output.txt
+>>   "Output Max Species Age"     max-spp-age.output.txt
 
->> RandomNumberSeed  4,357  << optional parameter; default = the seed is
-                            << randomly generated using the current time
+>> RandomNumberSeed		4,357	<< optional parameter; default = the seed is
+					<< randomly generated using the current time

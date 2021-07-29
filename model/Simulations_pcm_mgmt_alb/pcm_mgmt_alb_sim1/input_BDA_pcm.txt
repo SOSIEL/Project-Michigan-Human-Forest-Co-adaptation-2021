@@ -1,0 +1,15 @@
+LandisData "Base BDA"
+
+Timestep	1
+
+MapNames	bda/{agentName}-{timestep}.img
+
+SRDMapNames	bda/{agentName}-SRD-{timestep}.img
+
+NRDMapNames	bda/{agentName}-NRD-{timestep}.img
+
+BDPMapNames     bda/{agentName}-BDP-{timestep}.img
+
+LogFile		bda/bda-log.csv
+
+BDAInputFiles	input_BDA_alb_pcm.txt

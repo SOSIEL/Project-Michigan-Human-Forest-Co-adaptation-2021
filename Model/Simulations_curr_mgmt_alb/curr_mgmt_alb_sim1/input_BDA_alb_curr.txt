@@ -7,9 +7,9 @@ SRDMode	mean
 >> -------- Regional Outbreak Inputs -------------
    OutbreakPattern		CyclicNormal	<< CyclicNormal or CyclicUniform
    Mean				5		<< years
-   StDev			1		<< years
+   StDev			0		<< years
    TimeSinceLastEpidemic	5		<< In years, based on ALB phenology.
-   TemporalType			variablepulse	<< pulse or variablepulse
+   TemporalType			pulse	        << pulse or variablepulse
    MinROS			0
    MaxROS			3
 									
@@ -137,16 +137,16 @@ SRDMode	mean
 >> Species   MinorHost    2ndHost      MajorHost   | Class3        Class2        Class1       | Dead
 >> Name      Age SRDProb  Age SRDProb  Age SRDProb | Age MortProb  Age MortProb  Age MortProb | Fuel?
 >> -------------------------------------------------------------------------------------------------
-   acerrubr  6    0.1 	  24  0.5      50  1.0       6    0.1 	  24  0.5      50  1.0		no  << Red maple; Primary host in forest; Gustafson et al. (2018)
-   acersacc  2    0.1 	  08  0.5      18  1.0       2    0.1 	  08  0.5      18  1.0		no  << Silver maple; Secondary host; Gustafson et al. (2018)	  
-   betualle  20   0.1 	  80  0.5      180 1.0       20   0.1 	  80  0.5      180 1.0		no  << Swamp birch; Minor host
-   betupapy  7    0.1 	  30  0.5      999 1.0       7    0.1 	  30  0.5      999 1.0		no  << Paper birch; Minor host	  
-   fagugran  40   0.1	  100 0.5      225 1.0       40   0.1	  100 0.5      225 1.0		no  << American beech; Minor host
-   fraxamer  10   0.1	  30  0.5      70  1.0       10   0.1	  30  0.5      70  1.0		no  << American ash; Minor host; Gustafson et al. (2018)
-   fraxnigr  13   0.1	  53  0.5      118 1.0       13   0.1	  53  0.5      118 1.0		no  << Black ash; Minor host
-   fraxpenn  20   0.1	  79  0.5      177 1.0       20   0.1	  79  0.5      177 1.0		no  << Green ash; Minor host
-   popubals  6    0.1	  22  0.5      50  1.0       6    0.1	  22  0.5      50  1.0		no  << Balsam poplar; Minor host
-   popugran  10   0.1	  40  0.5      70  1.0       10   0.1	  40  0.5      70  1.0		no  << Large-tooth aspen; Minor host
-   poputrem  999  0.1	  999 0.5      999 1.0       999  0.1	  999 0.5      999 1.0		no  << Quaking aspen; Minor host
-   prunsero  8    0.1	  31  0.5      100 1.0       8    0.1	  31  0.5      100 1.0		no  << Black cherry; Minor host
-   ulmuamer  6    0.1	  24  0.5      54  1.0       6    0.1	  24  0.5      54  1.0		no  << American elm; Minor host
+   acerrubr  15   0.36 	  30   1.00    40   1.0      15   0.36 	   30   1.00     40   1.0       no  << Red maple; Primary host in forest
+   acersacc  40   0.36 	  80   1.00    120  1.0      40   0.36 	   80   1.00     120  1.0       no  << Sugar maple; Primary host	  
+   betualle  50   0.18 	  110  0.65    140  1.0      50   0.18 	   110  0.65     140  1.0       no  << Swamp birch; Minor host
+   betupapy  20   0.18 	  40   0.65    80   1.0      20   0.18 	   40   0.65     80   1.0       no  << Paper birch; Minor host	  
+   fagugran  80   0.18	  150  0.65    175  1.0      80   0.18	   150  0.65     175  1.0       no  << American beech; Minor host
+   fraxamer  25   0.18	  45   0.65    60   1.0      25   0.18	   45   0.65     60   1.0       no  << White ash; Minor host
+   fraxnigr  35   0.18	  70   0.65    90   1.0      35   0.18	   70   0.65     90   1.0       no  << Black ash; Minor host
+   fraxpenn  50   0.18	  105  0.65    135  1.0      50   0.18	   105  0.65     135  1.0       no  << Green ash; Minor host
+   popubals  15   0.18	  30   0.65    40   1.0      15   0.18	   30   0.65     40   1.0       no  << Balsam poplar; Minor host
+   popugran  30   0.18	  60   0.65    999  1.0      30   0.18	   60   0.65     999  1.0       no  << Bigtooth aspen; Minor host
+   poputrem  20   0.18	  40   0.65    999  1.0      20   0.18	   40   0.65     999  1.0       no  << Quaking aspen; Minor host
+   prunsero  20   0.18	  55   0.65    70   1.0      20   0.18	   55   0.65     70   1.0       no  << Black cherry; Minor host
+   ulmuamer  15   0.18	  30   0.65    40   1.0      15   0.18	   30   0.65     40   1.0       no  << American elm; Minor host
