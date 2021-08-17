@@ -7,18 +7,19 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Landis.Extension.BaseBDA-v4/4.0": {
+      "Landis.Extension.Output.Biomass-v3/3.0": {
         "dependencies": {
           "Landis.Core": "2.0.0",
           "NETStandard.Library": "2.0.3",
           "Landis.Library.AgeOnlyCohorts-v3": "3.0.0.0",
+          "Landis.Library.Biomass-v2": "2.0.0.0",
           "Landis.Library.BiomassCohorts-v3": "3.0.0.0",
           "Landis.Library.Cohorts-v2": "2.0.0.0",
           "Landis.Library.HarvestManagement-v4": "4.2.0.0",
           "Landis.Library.Metadata-v2": "2.1.0.0"
         },
         "runtime": {
-          "Landis.Extension.BaseBDA-v4.dll": {}
+          "Landis.Extension.Output.Biomass-v3.dll": {}
         }
       },
       "Landis.Core/2.0.0": {
@@ -978,6 +979,14 @@
           }
         }
       },
+      "Landis.Library.Biomass-v2/2.0.0.0": {
+        "runtime": {
+          "Landis.Library.Biomass-v2.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Landis.Library.BiomassCohorts-v3/3.0.0.0": {
         "runtime": {
           "Landis.Library.BiomassCohorts-v3.dll": {
@@ -1009,27 +1018,11 @@
             "fileVersion": "2.1.0.0"
           }
         }
-      },
-      "Landis.Library.SiteHarvest-v2/2.1.0.0": {
-        "runtime": {
-          "Landis.Library.SiteHarvest-v2.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        }
-      },
-      "Landis.Library.Succession-v8/8.0.0.0": {
-        "runtime": {
-          "Landis.Library.Succession-v8.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.0"
-          }
-        }
       }
     }
   },
   "libraries": {
-    "Landis.Extension.BaseBDA-v4/4.0": {
+    "Landis.Extension.Output.Biomass-v3/3.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1564,6 +1557,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Landis.Library.Biomass-v2/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Landis.Library.BiomassCohorts-v3/3.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -1580,16 +1578,6 @@
       "sha512": ""
     },
     "Landis.Library.Metadata-v2/2.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Landis.Library.SiteHarvest-v2/2.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Landis.Library.Succession-v8/8.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -1,9 +1,12 @@
->>MICHIGAN OUTPUT BIOMASS FILE.
-LandisData  "Output Biomass"
+>> Name: output-biomass.txt
+>> Description: 
 
-Timestep  5
+   LandisData  "Output Biomass"
 
-MakeTable yes  << Optional parameter
+   Timestep  5
+
+   MakeTable yes  << Optional parameter
+   MakeTableByManagementArea yes  << Optional parameter, introduced as part of this study.
 
 Species   abiebals
 acerrubr
@@ -38,6 +41,5 @@ thujocci
 tiliamer
 tsugcana
 ulmuamer
-
 
 MapNames  biomass/{species}-{timestep}.img
