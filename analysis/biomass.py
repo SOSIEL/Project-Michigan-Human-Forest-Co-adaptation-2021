@@ -9,7 +9,7 @@
 import pandas as pd
 
 # ------------
-# Prepare data
+# PREPARE DATA
 # ------------
 
 # Load data. Designate the first row as the header.

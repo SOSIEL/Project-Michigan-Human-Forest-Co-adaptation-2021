@@ -6,9 +6,9 @@ SRDMode	mean
 
 >> -------- Regional Outbreak Inputs -------------
    OutbreakPattern		CyclicNormal	<< CyclicNormal or CyclicUniform
-   Mean				5		<< years
+   Mean				5		<< In years, based on ALB phenology.
    StDev			0		<< years
-   TimeSinceLastEpidemic	5		<< In years, based on ALB phenology.
+   TimeSinceLastEpidemic	0		<< years
    TemporalType			pulse	        << pulse or variablepulse
    MinROS			0
    MaxROS			3

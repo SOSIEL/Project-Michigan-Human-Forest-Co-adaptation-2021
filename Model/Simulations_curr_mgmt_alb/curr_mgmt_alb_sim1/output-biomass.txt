@@ -13,9 +13,9 @@ acerrubr
 acersacc
 betualle
 betupapy
->> carycord
->> caryovat
->> castdent
+carycord
+caryovat
+castdent
 fagugran
 fraxamer
 fraxnigr
@@ -31,9 +31,9 @@ popugran
 poputrem
 prunsero
 queralba
->> quercocc
+quercocc
 querelli
->> querfalc
+querfalc
 quermacr
 querrubr
 quervelu
