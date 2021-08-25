@@ -1,4 +1,4 @@
-# Name: BHE_scenarios_alb 
+# Name: BHE_scenarios 
 # Description: ???
 # Author: G. Sotnik
 
@@ -31,17 +31,17 @@ scenarios = ['curr', 'pcm', 'gfdl']
 times = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
 
 # Allocating space for BHE scenarios.
-BHE_scenarios_alb = pd.DataFrame()
+BHE_scenarios = pd.DataFrame()
 
 # Load data. Designate the first row as the header. Drop unnecessary columns.
-BHE_curr_mgmt_alb_sim1 = pd.read_csv('output_BHE_curr_mgmt_alb_sim1.csv', header = 0)
-BHE_curr_mgmt_alb_sim1 = BHE_curr_mgmt_alb_sim1.drop(columns = rmv_cols)
+BHE_curr_mgmt_sim1 = pd.read_csv('output_BHE_curr_mgmt_alb_sim1.csv', header = 0)
+BHE_curr_mgmt_sim1 = BHE_curr_mgmt_sim1.drop(columns = rmv_cols)
 
-BHE_pcm_mgmt_alb_sim1 = pd.read_csv('output_BHE_pcm_mgmt_alb_sim1.csv', header = 0)
-BHE_pcm_mgmt_alb_sim1 = BHE_pcm_mgmt_alb_sim1.drop(columns = rmv_cols)
+BHE_pcm_mgmt_sim1 = pd.read_csv('output_BHE_pcm_mgmt_alb_sim1.csv', header = 0)
+BHE_pcm_mgmt_sim1 = BHE_pcm_mgmt_sim1.drop(columns = rmv_cols)
 
-BHE_gfdl_mgmt_alb_sim1 = pd.read_csv('output_BHE_gfdl_mgmt_alb_sim1.csv', header = 0)
-BHE_gfdl_mgmt_alb_sim1 = BHE_gfdl_mgmt_alb_sim1.drop(columns = rmv_cols)
+BHE_gfdl_mgmt_sim1 = pd.read_csv('output_BHE_gfdl_mgmt_alb_sim1.csv', header = 0)
+BHE_gfdl_mgmt_sim1 = BHE_gfdl_mgmt_sim1.drop(columns = rmv_cols)
 
 # ------------
 # PROCESS DATA
@@ -50,17 +50,17 @@ BHE_gfdl_mgmt_alb_sim1 = BHE_gfdl_mgmt_alb_sim1.drop(columns = rmv_cols)
 # Sum biomass harvested by scenario and year in a dataframe called BHE_scenarios.
 for scenario in range(3):
     for time in range(14):
-        BHE_scenarios_alb.loc[times[time], scenarios[scenario]] = vars()['BHE_' + scenarios[scenario] +'_mgmt_alb_sim1'].loc[
-            vars()['BHE_' + scenarios[scenario] + '_mgmt_alb_sim1']['Time'] == times[time], 'MgBiomassRemoved'].sum()
+        BHE_scenarios.loc[times[time], scenarios[scenario]] = vars()['BHE_' + scenarios[scenario] +'_mgmt_sim1'].loc[
+            vars()['BHE_' + scenarios[scenario] + '_mgmt_sim1']['Time'] == times[time], 'BiomassHarvestedMg_acersacc'].sum()
 
 # ------------
 # PLOT RESULTS
 # ------------
 
-BHE_scenarios_alb.plot.line(y = scenarios)
+BHE_scenarios.plot.line(y = scenarios)
 plt.xlabel('Year')
 plt.ylabel('Biomass Harvested (Tg)')
-plt.savefig('BHE_scenarios_alb+sim1.png',dpi=300)
+plt.savefig('BHE_scenarios.png',dpi=300)
 
 plt.show()
 
@@ -69,4 +69,4 @@ plt.show()
 # ------------
 
 # Save the dataframe BHE_Scenarios as a csv file.
-BHE_scenarios_alb.to_csv('analysis_BHE_scenarios_mgmt_alb_sim1.csv', index=False)
+BHE_scenarios.to_csv('analysis_BHE_scenarios.csv', index=False)

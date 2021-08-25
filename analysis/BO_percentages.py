@@ -1,6 +1,6 @@
 # Name: BO_species_percent_mgmt 
-# Description: Python code calculating the percentage of each of the 9 management areas that is composed
-## of each of the 27 specieas. 
+# Description: Python code plotting the change in the percentage of each of the 9 
+## management areas that is made up by the 13 host species. 
 # Author: G. Sotnik
 
 # Import relevant library.
@@ -13,7 +13,7 @@ import pandas as pd
 # --------------------
 
 # Load data. Designate the first row as the header. Drop unnecessary columns.
-BO_curr_species_mgmt = pd.read_csv('output_BO_curr_mgmt_alb_sim1.csv', header = 0)
+BO_curr_species_mgmt = pd.read_csv('output_BO_gfdl_mgmt_alb_sim1.csv', header = 0)
 #BO_species_mgmt = BO_species_mgmt.drop(BO_species_mgmt[BO_species_mgmt['Time'] != 0].index)
 
 species = ['AboveGroundBiomass_abiebals', 'AboveGroundBiomass_acerrubr', 'AboveGroundBiomass_acersacc',
@@ -64,7 +64,7 @@ for i in range(33):
         BO_curr_species_mgmt_percent.loc[area, species[i]] = round(BO_curr_species_mgmt.loc[area, species[i]] /\
                                                                    BO_curr_species_mgmt.loc[area, 'MA_sum'], 2)
 
-# Create the last column that sums the total percentage for each row.
+# Create the last column that sums the total percentage for each row to check if it equals to approaximately 1.
 for area in range(135):
     BO_curr_species_mgmt_percent.loc[area, 'MA_sum'] = BO_curr_species_mgmt_percent.loc[area, species].sum()
     
@@ -97,7 +97,7 @@ plt.xlabel('Year')
 plt.ylabel('Percent of management area')
 plt.yticks(np.arange(0, 1.1, 0.1))
 plt.legend(loc = 2)
-plt.savefig('image_BO_curr_mgmt_alb_sim1_percent.png',dpi=300)
+plt.savefig('image_BO_curr_mgmt_alb_im1_percent.png',dpi=300)
 
 # -------------
 # PRINT RESULTS
