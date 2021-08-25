@@ -5,32 +5,33 @@ BDPCalibrator	2
 SRDMode	mean								
 
 >> -------- Regional Outbreak Inputs -------------
-   OutbreakPattern		CyclicNormal	<< CyclicNormal or CyclicUniform
-   Mean				3		<< years
-   StDev			0		<< years
-   TimeSinceLastEpidemic	3		<< In years, based on ALB phenology.
-   TemporalType			pulse	        << pulse or variablepulse
-   MinROS			0
+   OutbreakPattern		CyclicUniform	<< CyclicNormal or CyclicUniform
+   MaxInterval                  3		<< In years, based on ALB phenology.
+   MinInterval                  0
+>>   Mean				3		<< In years, based on ALB phenology.
+>>   StDev			2		<< years
+   TimeSinceLastEpidemic	0		<< years
+   TemporalType			variablepulse	        << pulse or variablepulse
+   MinROS			2
    MaxROS			3
 									
 >> -------- Dispersal Inputs ----------------------									
    Dispersal			yes		<< yes or no							
-   DispersalRate		840		<< meters/year 30000x30000 m in approx 20 years 							
-   EpidemicThresh		0.0001		<<						
-   InitialEpicenterNum		2		<<							
-   OutbreakEpicenterCoeff	0.1		<< 
-   OutbreakEpicenterThresh 	0.0							
-   SeedEpicenter		no		<< yes or no							
-   SeedEpicenterCoeff		0.5								
-   DispersalTemplate		MaxRadius	<< MaxRadius, 4N,8N, 12N, or 24N"							
-				 					
+   DispersalRate		100		<< meters/year 30000x30000 m in approx 20 years 							
+   EpidemicThresh		0.3		<<						
+   InitialEpicenterNum		5		<<							
+   OutbreakEpicenterCoeff	0.01		<< 							
+   OutbreakEpicenterThresh	0.00		<< 		
+   SeedEpicenter		yes		<< yes or no							
+   SeedEpicenterCoeff		20								
+   DispersalTemplate		MaxRadius	<< MaxRadius, 4N,8N, 12N, or 24N"				 					
 									
 >> Neighborhood Resource Inputs 									
-   NeighborFlag			no		<< yes or no							
+   NeighborFlag			yes		<< yes or no							
    NeighborSpeedUp		none		<< none, 2x, 3x, or 4x"							
-   NeighborRadius		1		<< meters							
+   NeighborRadius		1000		<< meters							
    NeighborShape		uniform		<< uniform, linear, or gaussian"							
-   NeighborWeight		1								
+   NeighborWeight		10								
 			
 >> --------
    IntensityClass2_BDP		0.25

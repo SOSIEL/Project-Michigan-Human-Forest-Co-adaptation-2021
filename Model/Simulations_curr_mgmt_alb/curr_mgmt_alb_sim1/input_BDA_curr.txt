@@ -3,7 +3,7 @@
 
    LandisData "Base BDA"
 
-   Timestep	5
+   Timestep	1
 
    MapNames	bda/{agentName}-{timestep}.img
 
